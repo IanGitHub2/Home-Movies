@@ -20,18 +20,42 @@ export default class MovieHomePage extends Component {
                     </div>
                 </trailer>
                 <selection>
-                    {/* swicth to links */}
-                    <div class="homeselection">
-                        <div>New Movies</div>
+                    <div class="new-release-homepage">
+                        <div class="new-release-movie-poster-box">
+                          <div class="new-release-movie">movie and image</div>
+                          <div class="new-release-title">title</div>
+                        </div>
+                        <div class="new-release-movie-poster-box">
+                          <div class="new-release-movie">movie and image</div>
+                          <div class="new-release-title">title</div>
+                        </div>
+                        <div class="new-release-movie-poster-box">
+                          <div class="new-release-movie">movie and image</div>
+                          <div class="new-release-title">title</div>
+                        </div>
+                        <div class="new-release-movie-poster-box">
+                          <div class="new-release-movie">movie and image</div>
+                          <div class="new-release-title">title</div>
+                        </div>
+                        <div class="new-release-movie-poster-box">
+                          <div class="new-release-movie">movie and image</div>
+                          <div class="new-release-title">title</div>
+                        </div>
+                        <div class="new-release-movie-poster-box">
+                          <div class="new-release-movie">movie and image</div>
+                          <div class="new-release-title">title</div>
+                        </div>
+                        <div class="new-release-movie-poster-box">
+                          <div class="new-release-movie">movie and image</div>
+                          <div class="new-release-title">title</div>
+                        </div>
+                        <div class="new-release-movie-poster-box">
+                          <div class="new-release-movie">movie and image</div>
+                          <div class="new-release-title">title</div>
+                        </div>
                     </div>
-                    <div class="homeselection">
-                        <div>Action</div>
-                    </div>
-                    <div class="homeselection">
-                        <div>Comedy</div>
-                    </div>
-                    <div class="homeselection">
-                        <div>Science Fiction</div>
+
+                    <div>
                     </div>
                 </selection>
             </div>
