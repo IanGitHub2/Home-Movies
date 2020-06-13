@@ -19,31 +19,37 @@
 }
 
 .new-release-homepage {
+    display: flex;
     border: black solid 2px;
     padding: 0px 0px;
     margin: 0px 0px;
+    height: 16em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 .new-release-movie-poster-box {
-    display: flexbox;
+    display: inline-block;
+    height: 16em;
     padding: 0px 0px;
     margin: 0px 0px;
 }
 
 .new-release-movie {
-    display: inline-block;
-    /* float: left; */
+    display: flex;
+    height: 13em;
     width: 20em;
-    padding: 60px 0px;
+    padding: 0px 0px;
     margin: 0px 2px;
     border: springgreen solid 2px;
 }
 
 .new-release-title {
-    display: inline-block;
-    /* float: left; */
+    display: flex;
+    height: 2.4em;
     width: 20em;
-    padding: 10px 0px;
+    padding: 0px 0px;
     margin: 0px 2px;
     border: springgreen solid 2px;
 }

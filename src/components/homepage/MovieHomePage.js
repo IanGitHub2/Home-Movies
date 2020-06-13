@@ -16,42 +16,42 @@ export default class MovieHomePage extends Component {
                 </nav>
                 <trailer>
                     <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8t1NO-N4rFKnmw-8AdUJdwrWuJJIwOGEzoQJc0rLY7oP8oPtG&usqp=CAU" class="hometrailer" alt="Movie Trailer"></img>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC-HAAkHEIgn_4WMY0BVr5hgCfmnLiEJ2Fyy6RNjDwQdr2wJ7sgqjQIRKmJ0Pw&s=10" class="hometrailer" alt="Movie Trailer"></img>
                     </div>
                 </trailer>
                 <selection>
                     <div class="new-release-homepage">
                         <div class="new-release-movie-poster-box">
-                          <div class="new-release-movie">movie and image</div>
-                          <div class="new-release-title">title</div>
+                          <img class="new-release-movie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQfj0tBZXAuZrFyLTNqyU7pggW8SYJzZRQ8doLkuUfImOGj5r_T&usqp=CAU"/>
+                          <div class="new-release-title">The SpongeBob Movie: Sponge on the Run</div>
                         </div>
                         <div class="new-release-movie-poster-box">
-                          <div class="new-release-movie">movie and image</div>
-                          <div class="new-release-title">title</div>
+                          <img class="new-release-movie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThSVYeNP82fbTjIjp7hAn7hBUGSvTBcv8ZiqYBXieoeVT-X8ymJzI8Xhyv7ljb&s=10"/>
+                          <div class="new-release-title">Shaft</div>
                         </div>
                         <div class="new-release-movie-poster-box">
-                          <div class="new-release-movie">movie and image</div>
-                          <div class="new-release-title">title</div>
+                          <img class="new-release-movie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5GJ8AvnagwtcJKPxTKWIYcoGvrkcVmuyqSiiAY5Wdud3_MStQR0d0jyK3p36&s=10"/>
+                          <div class="new-release-title">Bad Boys: For Life</div>
                         </div>
                         <div class="new-release-movie-poster-box">
-                          <div class="new-release-movie">movie and image</div>
-                          <div class="new-release-title">title</div>
+                          <img class="new-release-movie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGGYI6djJelhvVbff-zFhx52-TmCemCrvLCvCWwPXsuFOR2AlnB7fPFM57YDHT&s=10"/>
+                          <div class="new-release-title">Play Date with Destiny</div>
                         </div>
                         <div class="new-release-movie-poster-box">
-                          <div class="new-release-movie">movie and image</div>
-                          <div class="new-release-title">title</div>
+                          <img class="new-release-movie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOYaKYnbUfEKq2fCIjZe6dEOF9udGhvNztya3gQHzisAyOYvD9t2wS0U5GyOY2&s=10"/>
+                          <div class="new-release-title">Ad Astra</div>
                         </div>
                         <div class="new-release-movie-poster-box">
-                          <div class="new-release-movie">movie and image</div>
-                          <div class="new-release-title">title</div>
+                          <img class="new-release-movie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMf_lyMtnLaErYj43C4V63DjRKuQYMt3vvNcCMPVpiUu_18CS7FeYv9qOxIww&s=10"/>
+                          <div class="new-release-title">Zombieland Double Tap</div>
                         </div>
                         <div class="new-release-movie-poster-box">
-                          <div class="new-release-movie">movie and image</div>
-                          <div class="new-release-title">title</div>
+                          <img class="new-release-movie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhbNnbABmkREHdRYlBuvqREnz8YZjiEkV616tz9k-kAE-ZA4BBDzVLfWSQNx0E&s=10"/>
+                          <div class="new-release-title">Terminator Dark Fate</div>
                         </div>
                         <div class="new-release-movie-poster-box">
-                          <div class="new-release-movie">movie and image</div>
-                          <div class="new-release-title">title</div>
+                          <img class="new-release-movie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLjBBzEmoGv5qag-vpHIPKeWX929v473aVNpFCGpGVFVlDtDIZUbWAFKAO3E05&s=10"/>
+                          <div class="new-release-title">Lady and The Tramp</div>
                         </div>
                     </div>
 
