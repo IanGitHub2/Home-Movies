@@ -1,3 +1,5 @@
+/* Nav bar */
+
 .homenav { 
     display: flex;
     justify-content: center;
@@ -11,6 +13,8 @@
     padding: 5px 25px;
 }
 
+/* New Movie Trailer */
+
 .hometrailer {
     width: 40em;
     height: 25em;
@@ -18,7 +22,13 @@
     padding: 0px 0px;
 }
 
-.new-release-homepage {
+/* New Movies */
+
+.new-movie-genre-title {
+    font-size: 2em;
+}
+
+.new-release-container {
     display: flex;
     border: black solid 2px;
     padding: 0px 0px;
@@ -46,6 +56,48 @@
 }
 
 .new-release-title {
+    display: flex;
+    height: 2.4em;
+    width: 20em;
+    padding: 0px 0px;
+    margin: 0px 2px;
+    border: springgreen solid 2px;
+}
+
+/* Top trending */
+
+.top-trending-title {
+    font-size: 2em;
+}
+
+.top-trending-container {
+    border: black solid 2px;
+    display: flex;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    height: 16em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.top-trending-box {
+    display: inline-block;
+    height: 16em;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+.top-trending-movie {
+    display: flex;
+    height: 13em;
+    width: 20em;
+    padding: 0px 0px;
+    margin: 0px 2px;
+    border: springgreen solid 2px;
+}
+
+.top-trending-movie-title {
     display: flex;
     height: 2.4em;
     width: 20em;
