@@ -1,16 +1,36 @@
+/* Body of page css */
+#body-css {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
 /* Nav bar */
 
 .homenav { 
     display: flex;
-    justify-content: center;
+    justify-content: left;
     list-style-type: none;
     margin: auto;
-    background-color: grey;
+    font-size: 1.1em;
+    font-family: 'Orbitron', sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,111,184,0.8449754901960784) 100%);
     color: whitesmoke;
 }
 
+  /* Company name in nav bar */
+
+  #nav-company-name {
+    font-family: 'Notable', sans-serif;
+    font-size: 1.3em;
+    border-right: whitesmoke solid 2px;
+  }
+
 .homenav, li {
-    padding: 5px 25px;
+    padding-top: .2em;
+    padding-left: .5em;
+    padding-right: .5em;
+    border-left: black solid 2px;
 }
 
 /* New Movie Trailer */
@@ -25,12 +45,15 @@
 /* New Movies */
 
 .new-movie-genre-title {
+    margin-top: 1.2em;
+    margin-bottom: .2em;
     font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
+    border-top: black solid 2px;
 }
 
 .new-release-container {
     display: flex;
-    border: black solid 2px;
     padding: 0px 0px;
     margin: 0px 0px;
     height: 16em;
@@ -52,7 +75,9 @@
     width: 20em;
     padding: 0px 0px;
     margin: 0px 2px;
-    border: springgreen solid 2px;
+    border: black solid 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .new-release-title {
@@ -61,17 +86,26 @@
     width: 20em;
     padding: 0px 0px;
     margin: 0px 2px;
-    border: springgreen solid 2px;
+    justify-content: center;
+    background-color: rgba(169,169,169,.8);
+    border: black solid 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Orbitron', sans-serif;
+    overflow: scroll;
 }
 
 /* Top trending */
 
 .top-trending-title {
+    margin-top: 1.2em;
+    margin-bottom: .2em;
     font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
+    border-top: black solid 2px;
 }
 
 .top-trending-container {
-    border: black solid 2px;
     display: flex;
     padding: 0px 0px;
     margin: 0px 0px;
@@ -94,7 +128,9 @@
     width: 20em;
     padding: 0px 0px;
     margin: 0px 2px;
-    border: springgreen solid 2px;
+    border: black solid 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .top-trending-movie-title {
@@ -103,5 +139,11 @@
     width: 20em;
     padding: 0px 0px;
     margin: 0px 2px;
-    border: springgreen solid 2px;
+    justify-content: center;
+    background-color: rgba(169,169,169,.8);
+    border: black solid 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Orbitron', sans-serif;
+    overflow: scroll;
 }
