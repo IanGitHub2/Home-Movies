@@ -17,7 +17,7 @@ export default class MovieHomePage extends Component {
                 </nav>
                 <trailer>
                     <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC-HAAkHEIgn_4WMY0BVr5hgCfmnLiEJ2Fyy6RNjDwQdr2wJ7sgqjQIRKmJ0Pw&s=10" class="hometrailer" alt="Movie Trailer"></img>
+                      <iframe width="966" height="543" src="https://www.youtube.com/embed/ZnKvQbpDYXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="scoob"></iframe>
                     </div>
                 </trailer>
                 <selection>

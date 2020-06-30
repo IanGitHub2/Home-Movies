@@ -1,7 +1,7 @@
 /* Body of page css */
 #body-css {
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(132,179,233,1) 100%);
 }
 
 /* Nav bar */
@@ -16,6 +16,10 @@
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,111,184,0.8449754901960784) 100%);
     color: whitesmoke;
+}
+
+li:hover {
+    color: rgba(206, 206, 206, 0.86);
 }
 
   /* Company name in nav bar */
@@ -67,6 +71,13 @@
     height: 16em;
     padding: 0px 0px;
     margin: 0px 0px;
+    
+}
+
+.new-release-movie-poster-box:hover {
+    color: rgba(37, 41, 237, 0.75);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .new-release-movie {
@@ -87,7 +98,7 @@
     padding: 0px 0px;
     margin: 0px 2px;
     justify-content: center;
-    background-color: rgba(169,169,169,.8);
+    background-color: rgba(229, 229, 229, 0.75);
     border: black solid 2px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -122,6 +133,12 @@
     margin: 0px 0px;
 }
 
+.top-trending-box:hover {
+    color: rgba(37, 41, 237, 0.75);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 .top-trending-movie {
     display: flex;
     height: 13em;
@@ -140,7 +157,7 @@
     padding: 0px 0px;
     margin: 0px 2px;
     justify-content: center;
-    background-color: rgba(169,169,169,.8);
+    background-color: rgba(229, 229, 229, 0.75);
     border: black solid 2px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
