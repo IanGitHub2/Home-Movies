@@ -11,3 +11,10 @@
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,111,184,0.8449754901960784) 100%);
     color: whitesmoke;
 }
+
+.bottomnav, li {
+    padding-top: .2em;
+    padding-left: .5em;
+    padding-right: .5em;
+    border-left: black solid 2px;
+}

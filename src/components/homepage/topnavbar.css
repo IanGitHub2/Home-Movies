@@ -11,3 +11,19 @@
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,111,184,0.8449754901960784) 100%);
     color: whitesmoke;
 }
+
+  /* Company name in nav bar */
+
+  #nav-company-name {
+    font-family: 'Notable', sans-serif;
+    font-size: 1.3em;
+    border-right: whitesmoke solid 2px;
+  }
+
+.homenav, li {
+    padding-top: .2em;
+    padding-left: .5em;
+    padding-right: .5em;
+    border-left: black solid 2px;
+}
+
