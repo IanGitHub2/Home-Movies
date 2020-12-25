@@ -5,7 +5,7 @@ export default class NewMovies extends React.Component {
     render(){
         return(
             <div>
-                                <selection>
+                <div>
                   <div class="new-movie-genre-title">New Movies</div>
                     <div class="new-release-container">
                         <div class="new-release-movie-poster-box">
@@ -68,7 +68,7 @@ export default class NewMovies extends React.Component {
                         <div class="top-trending-movie-title">Marriage Story</div>
                       </div>
                     </div>
-                </selection>
+                </div>
             </div>
         )
     }

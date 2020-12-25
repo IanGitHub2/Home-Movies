@@ -6,8 +6,8 @@ export default class TopNavBar extends React.Component {
         return(
             <div>
                 <nav>
-                    <ul class="homenav">
-                        <li id="nav-company-name"> Movies.com </li>
+                    <ul className="homenav">
+                        <li id="nav-company-name"><Link to='/'> Movies.com </Link></li>
                         <li> New Movies </li>
                         <li> Catagories </li>
                         <li><Link to='/AboutApp'> About </Link></li>

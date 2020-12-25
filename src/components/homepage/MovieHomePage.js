@@ -4,6 +4,8 @@ import './moviehomepage.css'
 import TopNavBar from './TopNavBar'
 import NewTrailer from './NewTrailer'
 import NewMovies from './NewMovies'
+import BottomNavBar from './BottomNavBar'
+
 export default class MovieHomePage extends Component {
     render() {
         return (
@@ -11,6 +13,7 @@ export default class MovieHomePage extends Component {
                 <TopNavBar/>
                 <NewTrailer/>
                 <NewMovies/>
+                <BottomNavBar/>
             </div>
         )
     }
