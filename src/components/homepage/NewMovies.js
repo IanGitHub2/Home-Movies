@@ -2,16 +2,7 @@ import React from 'react';
 //import axios from 'axios'
 
 export default class NewMovies extends React.Component {
-
-  state = {
-    genreState: [
-      {
-        id: 0,
-        name: ""
-      }
-    ]
-  }
-
+  
     render(){
 
       const api_url = "https://api.themoviedb.org/3/genre/movie/list?api_key=6f6374633eb8fa4d6e17d7fe0c8abcf8";
@@ -28,16 +19,18 @@ export default class NewMovies extends React.Component {
           let genreID = ( genres[i].id )
           let genreName = ( genres[i].name )
         
-          genresID += ( genreID + ', ')
-          genresName += ( genreName + ', ')
+          genresID.push( genreID + ', ')
+          genresName.push( genreName + ', ')
         }
-         console.log(genresID, genresName )
+         //console.log(genresID, genresName )
       }
       getGenres();
 
+      console.log(genresID, genresName);
+
         return(
             <div>
-              <div>{genresID}</div>
+              <div>{}</div>
                 <div>
                   <div className="new-movie-genre-title">New Movies</div>
                     <div className="new-release-container">
