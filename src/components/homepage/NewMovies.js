@@ -28,7 +28,7 @@ export default class NewMovies extends React.Component {
           let genreID = ( genres[i].id )
           let genreName = ( genres[i].name )
         
-          this.id += ( genreID + ', ')
+          genresID += ( genreID + ', ')
           genresName += ( genreName + ', ')
         }
          console.log(genresID, genresName )
