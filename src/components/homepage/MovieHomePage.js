@@ -7,6 +7,7 @@ import NewMovies from './NewMovies'
 import BottomNavBar from './BottomNavBar'
 
 export default class MovieHomePage extends Component {
+
     render() {
         return (
             <div id="body-css">
