@@ -1,42 +1,18 @@
 import React from 'react';
-//import axios from 'axios'
 
 export default class NewMovies extends React.Component {
   
     render(){
-
-      const api_url = "https://api.themoviedb.org/3/genre/movie/list?api_key=6f6374633eb8fa4d6e17d7fe0c8abcf8";
-
-      let genresID = [];
-      let genresName = [];
-      
-      async function getGenres() {
-        const res = await fetch(api_url);
-        const data = await res.json();
-        const { genres } = data;
-      
-        for(let i = 0; i < genres.length; i++){
-          let genreID = ( genres[i].id )
-          let genreName = ( genres[i].name )
-        
-          genresID.push( genreID + ', ')
-          genresName.push( genreName + ', ')
-        }
-         //console.log(genresID, genresName )
-      }
-      getGenres();
-
-      console.log(genresID, genresName);
-
         return(
             <div>
-              <div>{}</div>
-                <div>
+              {this.props.newMovies.map((movie, i) => { 
+                return(
+                  <div>
                   <div className="new-movie-genre-title">New Movies</div>
                     <div className="new-release-container">
                         <div className="new-release-movie-poster-box">
-                          <img className="new-release-movie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQfj0tBZXAuZrFyLTNqyU7pggW8SYJzZRQ8doLkuUfImOGj5r_T&usqp=CAU" alt="Movie cover art"/>
-                          <div className="new-release-title">The SpongeBob Movie: Sponge on the Run</div>
+                          <img className="new-release-movie" src='' alt="Movie cover art"/>
+                          <div className="new-release-title">{ movie.overview }</div>
                           </div>
                         <div className="new-release-movie-poster-box">
                           <img className="new-release-movie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThSVYeNP82fbTjIjp7hAn7hBUGSvTBcv8ZiqYBXieoeVT-X8ymJzI8Xhyv7ljb&s=10"alt="Movie cover art"/>
@@ -95,6 +71,9 @@ export default class NewMovies extends React.Component {
                       </div>
                     </div>
                 </div>
+                )
+              })}
+
             </div>
         )
     }
