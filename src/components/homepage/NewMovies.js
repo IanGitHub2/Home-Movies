@@ -10,8 +10,8 @@ export default class NewMovies extends React.Component {
                 return(
                   <div>
                     <div className="new-release-container">
-                        <div className="new-release-movie-poster-box">
-                          <img className="new-release-movie" src={movie.backdrop_path} alt="Movie cover art"/>
+                        <div className="new-release-movie-poster-box" key={movie.id}>
+                          <img className="new-release-movie" src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt="Movie cover art"/>
                           <div className="new-release-title">{ movie.title}</div>
                         </div>
                       </div>

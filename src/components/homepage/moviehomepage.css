@@ -31,7 +31,7 @@ li:hover {
     display: flex;
     padding: 0px 0px;
     margin: 0px 0px;
-    /* height: 16em; */
+    height: 16em;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -39,7 +39,7 @@ li:hover {
 
 .new-release-movie-poster-box {
     display: inline-block;
-    /* height: 16em; */
+    height: 16em;
     padding: 0px 0px;
     margin: 0px 0px;
     
@@ -53,8 +53,8 @@ li:hover {
 
 .new-release-movie {
     display: flex;
-    /* height: 13em; */
-    /* width: 20em; */
+    height: 13em;
+    width: 20em;
     padding: 0px 0px;
     margin: 0px 2px;
     border: black solid 2px;

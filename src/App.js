@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import MovieHomePage from './components/homepage/MovieHomePage'
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import MovieHomePage from './components/homepage/MovieHomePage';
 import AboutApp from './components/homepage/AboutApp';
+import Genres from './components/homepage/Genres';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
          <Switch>
            <Route exact path="/" component={MovieHomePage}/>
            <Route exact path="/AboutApp" component={AboutApp}/>
+           <Route exact path="/Genres" component={Genres}/>
          </Switch>
        </Router>
     </div>
