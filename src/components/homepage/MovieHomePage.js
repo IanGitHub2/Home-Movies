@@ -5,36 +5,35 @@ import './moviehomepage.css'
 import TopNavBar from './TopNavBar'
 import NewTrailer from './NewTrailer'
 import NewMovies from './NewMovies'
+import Trending from './Trending'
 import BottomNavBar from './BottomNavBar'
 
-const api_url = "https://api.themoviedb.org/3/movie/now_playing?api_key=6f6374633eb8fa4d6e17d7fe0c8abcf8&language=en-US&page=1";
+const api_url_new_movies = "https://api.themoviedb.org/3/movie/now_playing?api_key=6f6374633eb8fa4d6e17d7fe0c8abcf8&language=en-US&page=1";
+const api_url_popular_movies = "https://api.themoviedb.org/3/movie/popular?api_key=6f6374633eb8fa4d6e17d7fe0c8abcf8&language=en-US&page=1";
+
 
 export default class MovieHomePage extends Component {
 
     state = {
-        newMovies: [[]]
+        newMovies: [],
+        popularMovies: []
     }
 
     componentDidMount() {
-        fetch(api_url)
+        fetch(api_url_new_movies)
         .then((res) => res.json())
         .then( results => { 
             this.setState({ newMovies: results.results });
             console.log(results)
         })
+
+        fetch(api_url_popular_movies)
+        .then((res) => res.json())
+        .then( results => { 
+            this.setState({ popularMovies: results.results });
+            console.log(results)
+        })
     }
-    
-  
-        // async getGenres() {
-        //     const res = await fetch(api_url);
-        //     const data = await res.json();
-        //     const { results } = data;
-        //     // for(let i = 0; i < results.length; i++){
-        //     //     //this.setState( results[i].id )
-        //     //     //this.setState( results[i].backdrop_path )
-        //     //     this.setState( results[i].original_title )
-        //     // }
-        //  } 
 
     render() {
         return (
@@ -42,6 +41,7 @@ export default class MovieHomePage extends Component {
                 <TopNavBar/>
                 <NewTrailer/>
                 <NewMovies newMovies={this.state.newMovies}/>
+                <Trending popularMovies={this.state.popularMovies}/>
                 <BottomNavBar/>
             </div>
         )

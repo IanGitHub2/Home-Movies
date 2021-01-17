@@ -1,25 +1,4 @@
-/* Body of page css */
-
-
-/* Nav bar */
-
-
-li:hover {
-    color: rgba(206, 206, 206, 0.86);
-}
-
-/* New Movie Trailer */
-
-.hometrailer {
-    width: 40em;
-    height: 25em;
-    margin: auto;
-    padding: 0px 0px;
-}
-
-/* New Movies */
-
-.new-movie-genre-title {
+.top-trending-title {
     margin-top: 1.2em;
     margin-bottom: .2em;
     font-size: 2em;
@@ -27,34 +6,33 @@ li:hover {
     border-top: black solid 2px;
 }
 
-.new-release-container {
+.top-trending-container {
     display: flex;
     padding: 0px 0px;
     margin: 0px 0px;
-    /* height: 16em; */
+    height: 16em;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
-.new-release-movie-poster-box {
+.top-trending-box {
     display: inline-block;
-    /* height: 16em; */
+    height: 16em;
     padding: 0px 0px;
     margin: 0px 0px;
-    
 }
 
-.new-release-movie-poster-box:hover {
+.top-trending-box:hover {
     color: rgba(37, 41, 237, 0.75);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.new-release-movie {
+.top-trending-movie {
     display: flex;
-    /* height: 13em; */
-    /* width: 20em; */
+    height: 13em;
+    width: 20em;
     padding: 0px 0px;
     margin: 0px 2px;
     border: black solid 2px;
@@ -62,7 +40,7 @@ li:hover {
     border-top-right-radius: 10px;
 }
 
-.new-release-title {
+.top-trending-movie-title {
     display: flex;
     height: 2.4em;
     width: 20em;
