@@ -37,7 +37,7 @@ export default class MovieHomePage extends Component {
 
     render() {
         return (
-            <div id="body-css">
+            <div>
                 <TopNavBar/>
                 <NewTrailer/>
                 <NewMovies newMovies={this.state.newMovies}/>

@@ -3,7 +3,6 @@
 
 /* Nav bar */
 
-
 li:hover {
     color: rgba(206, 206, 206, 0.86);
 }
@@ -17,62 +16,3 @@ li:hover {
     padding: 0px 0px;
 }
 
-/* New Movies */
-
-.new-movie-genre-title {
-    margin-top: 1.2em;
-    margin-bottom: .2em;
-    font-size: 2em;
-    font-family: 'Orbitron', sans-serif;
-    border-top: black solid 2px;
-}
-
-.new-release-container {
-    display: flex;
-    padding: 0px 0px;
-    margin: 0px 0px;
-    height: 16em;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.new-release-movie-poster-box {
-    display: inline-block;
-    height: 16em;
-    padding: 0px 0px;
-    margin: 0px 0px;
-    
-}
-
-.new-release-movie-poster-box:hover {
-    color: rgba(37, 41, 237, 0.75);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.new-release-movie {
-    display: flex;
-    height: 13em;
-    width: 20em;
-    padding: 0px 0px;
-    margin: 0px 2px;
-    border: black solid 2px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.new-release-title {
-    display: flex;
-    height: 2.4em;
-    width: 20em;
-    padding: 0px 0px;
-    margin: 0px 2px;
-    justify-content: center;
-    background-color: rgba(229, 229, 229, 0.75);
-    border: black solid 2px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-family: 'Orbitron', sans-serif;
-    overflow: scroll;
-}

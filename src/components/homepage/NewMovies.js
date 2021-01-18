@@ -1,4 +1,5 @@
 import React from 'react';
+import './newmovies.css'
 
 export default class NewMovies extends React.Component {
   
@@ -9,13 +10,11 @@ export default class NewMovies extends React.Component {
               {this.props.newMovies.map((movie, i) => { 
                 return(
                   <div>
-                    <div className="new-release-container">
-                        <div className="new-release-movie-poster-box" key={movie.id}>
-                          <img className="new-release-movie" src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt="Movie cover art"/>
-                          <div className="new-release-title">{ movie.title}</div>
-                        </div>
+                      <div key={movie.id}>
+                        <img src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt="Movie cover art"/>
+                        <div>{ movie.title}</div>
                       </div>
-                    </div>
+                  </div>
                 )
               })}
 

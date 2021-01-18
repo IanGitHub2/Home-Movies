@@ -10,11 +10,9 @@ export default class Trending extends React.Component {
                 {this.props.popularMovies.map((movie, i) => {
                     return(
                         <div>
-                            <div className="top-trending-container ">
-                                <div className="top-trending-box">
-                                <img className="top-trending-movie" src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt="Movie cover art"/>
-                                <div className="top-trending-movie-title">{movie.title}</div>
-                                </div>
+                            <div>
+                                <img src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt="Movie cover art"/>
+                                <div>{movie.title}</div>
                             </div>
                         </div>
                     )
