@@ -40,8 +40,10 @@ export default class MovieHomePage extends Component {
             <div>
                 <TopNavBar/>
                 <NewTrailer/>
-                <NewMovies newMovies={this.state.newMovies}/>
-                <Trending popularMovies={this.state.popularMovies}/>
+                <section className='movie-scroll-section'>
+                    <NewMovies newMovies={this.state.newMovies}/>
+                    <Trending popularMovies={this.state.popularMovies}/>
+                </section>
                 <BottomNavBar/>
             </div>
         )

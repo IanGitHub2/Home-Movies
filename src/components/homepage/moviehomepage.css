@@ -16,3 +16,16 @@ li:hover {
     padding: 0px 0px;
 }
 
+.movie-scroll-section {
+    display: grid;
+    height: 50%;
+    width: 100vw;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-area: 
+    'newMov' 'trend' 'stuff'
+    'newMov' 'trend' 'stuff'
+    'newMov' 'trend' 'stuff'
+    'newMov' 'trend' 'stuff';
+}
+

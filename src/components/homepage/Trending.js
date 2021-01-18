@@ -9,7 +9,7 @@ export default class Trending extends React.Component {
                 <div className="new-movie-genre-title">Trending Movies</div>
                 {this.props.popularMovies.map((movie, i) => {
                     return(
-                        <div>
+                        <div className='trending-container'>
                             <div>
                                 <img src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt="Movie cover art"/>
                                 <div>{movie.title}</div>

@@ -1,8 +1,16 @@
 
-.new-movie-genre-title {
+/* .new-movie-genre-title {
     margin-top: 1.2em;
     margin-bottom: .2em;
     font-size: 2em;
     font-family: 'Orbitron', sans-serif;
     border-top: black solid 2px;
+} */
+
+.movie-container {
+    grid-area: 'newMov';
+    height: 99%;
+    width: 99%;
+    margin: auto;
+    float: left;
 }
