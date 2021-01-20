@@ -5,11 +5,11 @@ import './trending.css'
 export default class Trending extends React.Component {
     render() {
         return(
-            <div>
+            <div className='trending-container'>
                 <div className="new-movie-genre-title">Trending Movies</div>
                 {this.props.popularMovies.map((movie, i) => {
                     return(
-                        <div className='trending-container'>
+                        <div className="each_movie">
                             <div>
                                 <img src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt="Movie cover art"/>
                                 <div>{movie.title}</div>
