@@ -22,7 +22,7 @@ export default class Genres extends React.Component {
 
     render() {
         return(
-            <div>
+            <div id='genres-background'>
                 <TopNavBar/>
                 <GenreDataPage genres={this.state.genre}/>
                 <BottomNavBar/>
