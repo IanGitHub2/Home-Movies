@@ -1,6 +1,6 @@
 import React from 'react';
-import TopNavBar from './TopNavBar'
-import BottomNavBar from './BottomNavBar'
+import TopNavBar from '../navbars/TopNavBar'
+import BottomNavBar from '../navbars/BottomNavBar'
 
 export default class AboutApp extends React.Component {
     render(){

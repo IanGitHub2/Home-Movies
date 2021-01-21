@@ -1,6 +1,6 @@
 import React from 'react'
-import TopNavBar from './TopNavBar'
-import BottomNavBar from './BottomNavBar'
+import TopNavBar from '../navbars/TopNavBar'
+import BottomNavBar from '../navbars/BottomNavBar'
 import GenreDataPage from './GenreDataPage'
 
 const api_url_genres = "https://api.themoviedb.org/3/genre/movie/list?api_key=6f6374633eb8fa4d6e17d7fe0c8abcf8&language=en-US"
