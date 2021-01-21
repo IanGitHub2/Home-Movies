@@ -6,6 +6,6 @@
     border-top: black solid 2px;
 }
 
-.trending-container {
+#trending-container {
     grid-area: 'trend';
 }

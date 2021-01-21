@@ -7,10 +7,6 @@
     border-top: black solid 2px;
 }
 
-.movie-container {
+#movie-container {
     grid-area: 'newMov';
-}
-
-.each_movie {
-    float: left;
 }

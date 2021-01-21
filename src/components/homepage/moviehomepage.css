@@ -27,3 +27,14 @@ li:hover {
     'newMov trend';
 }
 
+/*Styling for middle setction movies home page*/
+
+.movie-middle-section-container {
+    overflow-y: scroll;
+    height: 22.5em;
+}
+
+.each_movie {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
