@@ -11,7 +11,7 @@ const api_url = `https://api.themoviedb.org/3/movie/${last_segment}?api_key=6f63
 export default class SinglePost extends React.Component {
 
     state = {
-        singles: [],
+        singles: []
     }
 
     componentDidMount() {
