@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import './newmovies.css'
 
 export default class NewMovies extends React.Component {
-  
     render(){
         return(
           <div>
