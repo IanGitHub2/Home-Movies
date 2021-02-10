@@ -9,15 +9,25 @@ const api_config_url2 = `?api_key=6f6374633eb8fa4d6e17d7fe0c8abcf8&language=en-U
 
 export default class SinglePost extends React.Component {
 
-    state = {
-        singlePostElement: []
-    }
+    // state = {
+    //     singlePostElement: []
+    // }
+
+    constructor(data) {
+        super(data);
+    
+        // Assign state itself, and a default value for items
+        this.state = {
+            singlePostElement: [{}]
+        };
+      }
 
     componentDidMount() {
         axios(api_config_url + this.props.match.params.id + api_config_url2)
         .then(({ data }) => {
             let result = data;
-            this.setState({ singlePostElement: [result.result] })
+            this.setState({ singlePostElement: result.result })
+            // this.setState({ singlePostElement: [data.data] })
             console.log(result)
         }).catch(error => {
             console.log(error)
