@@ -8,7 +8,7 @@ export default class GenreDataPage extends React.Component {
             <div id='genres-container'>
                 {this.props.genres.map(( genre, i) => {
                     return(
-                        <Link >
+                        <Link to={`Selected-Genre/${genre.id}`}>
                         <div key={genre.id} className='genre-name-box'>{genre.name}</div>
                         </Link>
                     )
