@@ -13,32 +13,30 @@ export default class SinglePost extends React.Component {
     //     singlePostElement: []
     // }
 
-    constructor(data) {
-        super(data);
+    constructor(props) {
+        super(props);
     
         // Assign state itself, and a default value for items
         this.state = {
-            singlePostElement: [{}]
+            singlePostElement: []
         };
       }
 
     componentDidMount() {
         axios(api_config_url + this.props.match.params.id + api_config_url2)
         .then(({ data }) => {
-            let result = data;
-            this.setState({ singlePostElement: result.result })
-            // this.setState({ singlePostElement: [data.data] })
-            console.log(result)
+            this.setState({ singlePostElement: [data] })
+            //console.log(data)
         }).catch(error => {
             console.log(error)
         })
     }
 
-    render() {console.log(this.singlePostElement)
+    render() {console.log(this.state.singlePostElement)
         return(
             <div>
                 <TopNavBar/>
-                {/* <SingleDataPage singlePostElement={this.state.singlePostElement}/> */}
+                <SingleDataPage singlePostElement={this.state.singlePostElement}/>
                 <BottomNavBar/>
             </div>
         )

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class SingleDataPage extends React.Component {
     render() {
-        if (!this.props.singlePostElement) return 1;
+        //if (!this.props.singlePostElement) return 1;
         return(
             <div>
                 {this.props.singlePostElement.map((single, i ) => {
