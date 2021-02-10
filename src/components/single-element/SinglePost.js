@@ -1,5 +1,6 @@
 import React from 'react'
- import axios from 'axios'
+import axios from 'axios'
+import './singlepost.css'
 import SingleDataPage from './SingleDataPage'
 import TopNavBar from '../navbars/TopNavBar'
 import BottomNavBar from '../navbars/BottomNavBar'
@@ -9,14 +10,9 @@ const api_config_url2 = `?api_key=6f6374633eb8fa4d6e17d7fe0c8abcf8&language=en-U
 
 export default class SinglePost extends React.Component {
 
-    // state = {
-    //     singlePostElement: []
-    // }
-
     constructor(props) {
         super(props);
     
-        // Assign state itself, and a default value for items
         this.state = {
             singlePostElement: []
         };
