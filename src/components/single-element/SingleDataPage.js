@@ -8,8 +8,8 @@ export default class SingleDataPage extends React.Component {
             <div id='pagebody'>
                 {this.props.singlePostElement.map((single, i ) => {
                     return(
-                        <div>
-                            <div key={single.id}>
+                        <div key={single.id}>
+                            <div >
                                 <div className="line-up">
                                     <p className="bold-tag"> Tagline: </p> 
                                     <p className="regualer-tag"> {single.tagline} </p>

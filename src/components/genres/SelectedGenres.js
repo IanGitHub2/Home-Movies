@@ -4,8 +4,8 @@ import SelectedGenresDataPage from './SelectedGenresDataPage'
 import TopNavBar from '../navbars/TopNavBar'
 import BottomNavBar from '../navbars/BottomNavBar'
 
-const api_config_url = `https://api.themoviedb.org/3/search/movie?api_key=6f6374633eb8fa4d6e17d7fe0c8abcf8&language=en-US&query=`
-const api_config_url2 = `&page=1&include_adult=true`
+const api_config_url = `https://api.themoviedb.org/3/movie/`
+const api_config_url2 = `/similar?api_key=6f6374633eb8fa4d6e17d7fe0c8abcf8&language=en-US&page=1`
 
 export default class SelectedGenres extends React.Component {
 
@@ -20,7 +20,7 @@ export default class SelectedGenres extends React.Component {
       componentDidMount() {
         axios(api_config_url + this.props.match.params.id + api_config_url2)
         .then(({ data }) => {
-            this.setState({ singlePostElement: [data] })
+            this.setState({ selectedGenres: [data] })
             console.log(data)
         }).catch(error => {
             console.log(error)
