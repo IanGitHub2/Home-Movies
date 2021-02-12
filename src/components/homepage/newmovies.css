@@ -44,6 +44,7 @@
 } 
 
 #movie-title {
+    margin-bottom: 1em;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
@@ -51,6 +52,7 @@
 }
 
 #movie-des {
+    margin: 0 .3em 1.5em .3em;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     letter-spacing: 2px;

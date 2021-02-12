@@ -9,3 +9,50 @@
 #trending-container {
     grid-area: 'trend';
 }
+
+#trending-box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+#trending-img {
+    display: block;
+    width: 60%;
+}
+
+#overlay-trending-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    margin-left: 20%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#overlay-trending-text:hover {
+    opacity: 1;
+}
+
+#trending-title {
+    margin-bottom: 1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+
+#trending-des {
+    margin: 0 .3em 1.5em .3em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}

@@ -18,20 +18,21 @@ li:hover {
 
 .movie-scroll-section {
     display: grid;
+    margin-top: 2em;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-area: 
-    'newMov trend'
-    'newMov trend'
-    'newMov trend'
-    'newMov trend';
+    'newMov . trend'
+    'newMov . trend'
+    'newMov . trend'
+    'newMov . trend';
 }
 
 /*Styling for middle setction movies home page*/
 
 .movie-middle-section-container {
     overflow-y: scroll;
-    height: 22.5em;
+    height: 30em;
 }
 
 .each_movie {

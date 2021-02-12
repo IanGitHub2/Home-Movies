@@ -13,9 +13,12 @@ export default class Trending extends React.Component {
                         return(
                             <div className="each_movie" key={movie.id}>
                                 <Link to={`Single-Post/${movie.id}`}>
-                                    <div>
-                                        <img src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt="Movie cover art"/>
-                                        <div>{movie.title}</div>
+                                    <div id="trending-box">
+                                        <img id="trending-img" src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt="Movie cover art"/>
+                                        <div id="overlay-trending-text">
+                                            <div id="trending-title">{movie.title}</div>
+                                            <div id="trending-des">{movie.overview}</div>
+                                        </div>
                                     </div>
                                 </Link>
                             </div>
