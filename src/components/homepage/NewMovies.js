@@ -13,9 +13,12 @@ export default class NewMovies extends React.Component {
                   return(
                     <div key={movie.id} className="each_movie">
                       <Link to={`Single-Post/${movie.id}`}>
-                        <div>
-                          <img src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt="Movie cover art"/>
-                          <div>{ movie.title}</div>
+                        <div id="movie-box">
+                          <img id="movie-img" src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt="Movie cover art"/>
+                          <div id="overlay-text">
+                            <div id="movie-title">{ movie.title}</div>
+                            <div id="movie-des">{movie.overview}</div>
+                          </div>
                         </div>
                         </Link>
                     </div>
