@@ -1,0 +1,111 @@
+#about-app-body {
+    height: 89vh;
+}
+
+
+#about-app-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 2em;
+    grid-template-areas: 
+    "head head tagLin tagLin tagLin"
+    ". movDB movDB movDB ."
+    ". . butLin . ."
+    "blo1 blo2 blo3 blo4 blo5";
+}
+
+#header {
+    grid-area: head;
+    font-size: 2em;
+    margin: 1em 0em;
+    justify-content: center;
+}
+
+#tag-line {
+    grid-area: tagLin;
+    font-size: 1.2em;
+    margin: 1em 0em;
+    justify-content: left;
+}
+
+#movieDB {
+    grid-area: movDB;
+}
+
+#button-link {
+    grid-area: butLin;
+    font-size: 1.2em;
+    padding: 1em 1em;
+    margin: 1em 0em;
+    background-color: rgba(255, 255, 240, 0.5);
+    border-radius: 15px;
+}
+
+#button-link:hover {
+    grid-area: butLin;
+    font-size: 1.2em;
+    padding: 1em 1em;
+    margin: 1em 0em;
+    background-color: rgba(196, 196, 196, 0.5);
+    border-radius: 15px;
+}
+
+#block1 {
+    grid-area: blo1;
+}
+
+#block2 {
+    grid-area: blo2;
+}
+
+#block3 {
+    grid-area: blo3;
+}
+
+#block4 {
+    grid-area: blo4;
+}
+
+#block5 {
+    grid-area: blo5;
+}
+
+.bold-tag-a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.bold-tag-it-a {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.regualer-tag-a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.regualer-tag-it-a {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.thin-tag-a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.thin-tag-it-a {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.4em;
+}
