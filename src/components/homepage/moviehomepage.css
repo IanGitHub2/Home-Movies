@@ -18,14 +18,11 @@ li:hover {
 
 .movie-scroll-section {
     display: grid;
-    margin-top: 2em;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 2em 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     grid-area: 
-    'newMov . trend'
-    'newMov . trend'
-    'newMov . trend'
-    'newMov . trend';
+    "newMov . trend";
 }
 
 /*Styling for middle setction movies home page*/

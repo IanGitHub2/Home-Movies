@@ -2,6 +2,54 @@
     height: auto;
 }
 
+#single-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "tagLin tagLin tagLin"
+    " . sinImg . "
+    " . sinOve . "
+    "sinTitl sinRes sinSta"
+    "sinLen sinGen sinMon";
+}
+
+#single-tagline {
+    grid-area: tagLin;
+}
+
+#single-img {
+    grid-area: sinImg;
+}
+
+#single-title {
+    grid-area: sinTitl;
+}
+
+#single-release {
+    grid-area: sinRes;
+}
+
+#single-status {
+    grid-area: sinSta;
+}
+
+#single-length {
+    grid-area: sinLen;
+}
+
+#single-genres {
+    grid-area: sinGen;
+}
+
+#single-money {
+    grid-area: sinMon;
+}
+
+#single-overview {
+    grid-area: sinOve;
+}
+
 .bold-tag {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -49,4 +97,8 @@
 #img-tag {
     width: 18em;
     border-radius: 2px;
+}
+
+.sin-money {
+    display: flex;
 }

@@ -8,7 +8,7 @@
 }
 
 #movie-container {
-    grid-area: 'newMov';
+    grid-area: newMov;
 }
 
 #movie-box {

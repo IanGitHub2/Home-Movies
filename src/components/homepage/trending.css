@@ -7,7 +7,7 @@
 }
 
 #trending-container {
-    grid-area: 'trend';
+    grid-area: trend;
 }
 
 #trending-box {
