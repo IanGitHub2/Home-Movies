@@ -18,6 +18,13 @@
     grid-area: tagLin;
 }
 
+.single-tag {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
 #single-img {
     grid-area: sinImg;
 }

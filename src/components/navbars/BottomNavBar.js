@@ -8,7 +8,7 @@ export default class TopNavBar extends React.Component {
             <div>
                 <nav>
                     <ul className="bottomnav">
-                        <li id="nav-company-name"><Link to='/'> Movies.com </Link></li>
+                        <Link to='/'><li id="nav-company-name"> Movies.com </li></Link>
                         <li> None </li>
                         <li> None </li>
                         <li> None </li>

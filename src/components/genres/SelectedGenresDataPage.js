@@ -4,7 +4,7 @@ export default class SelectedGenresDataPage extends React.Component {
     render() {
         return(
             <div>
-                <div>hi</div>
+                <div>Hi still working on this.</div>
                 {this.props.selectedGenres.map((genres, i ) => {
                     return(
                         <div>

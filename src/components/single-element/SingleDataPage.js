@@ -9,9 +9,8 @@ export default class SingleDataPage extends React.Component {
                 {this.props.singlePostElement.map((single, i ) => {
                     return(
                         <div id="single-container" key={single.id}>
-                            <div id="single-tagline" className="line-up">
-                                <p className="bold-tag"> Tagline: </p> 
-                                <p className="regualer-tag"> {single.tagline} </p>
+                            <div id="single-tagline" className="single-tag">
+                                <p className="bold-tag"> "{single.tagline}" </p>
                             </div>
 
                             <div id="single-img">
@@ -27,7 +26,7 @@ export default class SingleDataPage extends React.Component {
                             </div>
                             
                             <div id="single-release" className="line-up">
-                                <p className="bold-tag">Realease date:</p> 
+                                <p className="bold-tag">Release date:</p> 
                                 <p className="regualer-tag">{single.release_date}</p>
                             </div>
 
