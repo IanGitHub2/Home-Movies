@@ -6,9 +6,9 @@ import './newmovies.css'
 export default class NewMovies extends React.Component {
     render(){
         return(
-          <div>
+          <div id="movie-container">
             <div className="new-movie-genre-title">New Movies</div>
-            <div id="movie-container" className="movie-middle-section-container">
+            <div className="movie-middle-section-container">
                 {this.props.newMovies.map((movie, i) => { 
                   return(
                     <div key={movie.id} className="each_movie">

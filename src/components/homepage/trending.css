@@ -4,6 +4,7 @@
     font-size: 2em;
     font-family: 'Orbitron', sans-serif;
     border-top: black solid 2px;
+    border-left: black solid 2px;
 }
 
 #trending-container {
@@ -14,6 +15,7 @@
     display: flex;
     position: relative;
     justify-content: center;
+    border-left: black solid 2px;
 }
 
 #trending-img {

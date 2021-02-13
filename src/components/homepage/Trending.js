@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 export default class Trending extends React.Component {
     render() {
         return(
-            <div>
-                <div className="new-movie-genre-title">Trending Movies</div>
-                <div id='trending-container' className="movie-middle-section-container">
+            <div id="trending-container">
+                <div className="top-trending-title">Trending Movies</div>
+                <div className="movie-middle-section-container">
                     {this.props.popularMovies.map((movie, i) => {
                         return(
                             <div className="each_movie" key={movie.id}>
