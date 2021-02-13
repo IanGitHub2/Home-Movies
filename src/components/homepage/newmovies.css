@@ -37,6 +37,7 @@
     color: #fff;
     opacity: 0;
     transition: opacity 0.3s;
+    overflow: auto;
 }
 
 #overlay-text:hover {

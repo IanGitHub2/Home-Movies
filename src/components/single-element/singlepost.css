@@ -26,6 +26,10 @@
     grid-area: sinTitl;
 }
 
+#title-sin {
+    margin-top: 1em;
+}
+
 #single-release {
     grid-area: sinRes;
 }
@@ -40,10 +44,31 @@
 
 #single-genres {
     grid-area: sinGen;
+    margin-top: 1.5em;
 }
 
 #single-money {
     grid-area: sinMon;
+}
+
+.sin-budget {
+    display: flex;
+    margin: 0em 1em;
+    justify-content: center;
+}
+
+#sin-budget1 {
+    margin-right: .2em;
+}
+
+.sin-rev {
+    display: flex;
+    margin: 0em 1em;
+    justify-content: center;
+}
+
+#sin-rev1 {
+    margin-right: .2em;
 }
 
 #single-overview {
@@ -97,8 +122,4 @@
 #img-tag {
     width: 18em;
     border-radius: 2px;
-}
-
-.sin-money {
-    display: flex;
 }

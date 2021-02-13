@@ -23,7 +23,7 @@ export default class SingleDataPage extends React.Component {
                             </div>
 
                             <div id="single-title">
-                                <div className="bold-tag">{ single.title }</div>
+                                <div id="title-sin" className="bold-tag">{ single.title }</div>
                             </div>
                             
                             <div id="single-release" className="line-up">
@@ -42,12 +42,16 @@ export default class SingleDataPage extends React.Component {
                             </div>
 
                             <div id="single-genres">
-                                <div>Genres: </div>
+                                <div className="bold-tag">Genres: </div>
                             </div>
 
-                            <div id="single-money" className="sin-money">
-                                <p className="bold-tag">Budget: $</p><p className="regualer-tag">{single.budget}</p>
-                                <p className="bold-tag">Revenue: $</p><p className="regualer-tag">{single.revenue}</p>
+                            <div id="single-money">
+                                <div className="sin-budget">
+                                    <p id="sin-budget1" className="bold-tag">Budget: $</p><p className="regualer-tag">{single.budget}</p>
+                                </div>
+                                <div className="sin-rev">
+                                    <p id="sin-rev1" className="bold-tag">Revenue: $</p><p className="regualer-tag">{single.revenue}</p>
+                                </div>
                             </div>
                         </div>
                     )
