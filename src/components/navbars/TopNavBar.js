@@ -9,7 +9,7 @@ export default class TopNavBar extends React.Component {
                 <nav>
                     <ul className="top-nav">
                         <Link to='/'><li id="nav-company-name"> Movies.com</li> </Link>
-                        <li> New Movies </li>
+                        <li> Now Playing </li>
                         <Link to='/Genres'><li> Genres </li></Link>
                         <Link to='/AboutApp'><li> About </li></Link>
                     </ul>
