@@ -1,6 +1,13 @@
 ### Movies.com
 This is a app for looking and searching for movies / tv shows and some information about them.
 
+I want to set up the server to act like a account to hold movies you have saved as watch later.
+
+Need to work on layout.
+
+Need to Optimize for phones.
+
+Need to work on Trailers file so it updates with newest Trailers.
 
 
 
