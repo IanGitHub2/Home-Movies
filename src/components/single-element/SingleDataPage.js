@@ -41,7 +41,15 @@ export default class SingleDataPage extends React.Component {
                             </div>
 
                             <div id="single-genres">
-                                <div className="bold-tag">Genres: </div>
+                                <p className="bold-tag">Did you like or dislike the movie ?</p>
+                                <div>
+                                    <button> Like </button>
+                                    <div>0</div>
+                                </div>
+                                <div>
+                                    <button> DisLike </button>
+                                    <div>0</div>
+                                </div>
                             </div>
 
                             <div id="single-money">

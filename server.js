@@ -20,12 +20,14 @@ app.use(express.static(`${__dirname}/client/build`));
  * the paths defined in the router.
  */
 
-app.get('/', (req, res) => {
-    res.send(`${__dirname}/client/build/index.html`)
-});
+const PORT = process.env.PORT || 4000;
 
-const PORT = process.env.PORT || 3002;
+app.get('/', (req, res) => {
+    res.status(200).json({ message: "hello from express server"});
+});
 
 app.listen(PORT, () => {
     console.log(`App is listing on PORT ${PORT}`)
 });
+
+// Remember start by saying : node server.js
