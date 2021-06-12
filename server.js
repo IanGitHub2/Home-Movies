@@ -8,6 +8,8 @@ const app = express();
  *
  */
 
+const { moviesRouter } = require('./controllers/movies.js');
+
 app.use(express.urlencoded({extended: true}));
 
 app.use(express.json())
@@ -19,6 +21,8 @@ app.use(express.static(`${__dirname}/client/build`));
  * add router for the application to use. The first argument is a prefix to all
  * the paths defined in the router.
  */
+
+app.use('/api/movies', moviesRouter);
 
 const PORT = process.env.PORT || 4000;
 
