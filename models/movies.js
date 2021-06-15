@@ -2,9 +2,9 @@ const mongoose = require('./connection.js');
 const Schema = mongoose.Schema;
 
 const MoviesSchema = new Schema({
-    Id: String,
+    id: String,
     like: Boolean,
-    Watch: Boolean,
+    watch: Boolean
 });
 
 const MoviesCollection = mongoose.model('Movie', MoviesSchema);
