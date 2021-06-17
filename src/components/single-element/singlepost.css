@@ -8,10 +8,10 @@
     grid-template-rows: repeat(6, auto);
     grid-template-areas: 
     "tagLin tagLin tagLin"
-    " . sinTitl . "
+    " sinTitl sinTitl sinTitl  "
     " sinLen sinImg sinSta "
     " sinRes sinImg sinMon"
-    " . sinOve . "
+    " sinOve sinOve sinOve "
     " . sinGen . ";
 }
 
@@ -32,22 +32,30 @@
 
 #single-title {
     grid-area: sinTitl;
+    font-size: 1.8em;
+    justify-content: center;
 }
 
 #title-sin {
-    margin-top: 1em;
+    margin-bottom: .5em;
 }
 
 #single-release {
     grid-area: sinRes;
+    display: flex;
+    align-self: center;
 }
 
 #single-status {
     grid-area: sinSta;
+    display: flex;
+    align-self: center;
 }
 
 #single-length {
     grid-area: sinLen;
+    display: flex;
+    align-self: center;
 }
 
 #single-genres {
@@ -57,6 +65,8 @@
 
 #single-money {
     grid-area: sinMon;
+    display: flex;
+    align-self: center;
 }
 
 .sin-budget {
