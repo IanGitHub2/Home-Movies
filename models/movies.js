@@ -29,7 +29,7 @@ const deleteData = (dataId) => {
     return MoviesCollection.deleteOne({_id: dataId})
 };
 
-module.export = {
+module.exports = {
     grabAllData,
     grabSingleData,
     addData,

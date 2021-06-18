@@ -24,14 +24,14 @@ app.use(express.static(`${__dirname}/client/build`));
 
 app.use('/api/movies', moviesRouter);
 
-const PORT = process.env.PORT || 4000;
-
 app.get('/', (req, res) => {
     res.status(200).json({ message: "hello from express server"});
 });
+
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
     console.log(`App is listing on PORT ${PORT}`)
 });
 
-// Remember start by saying : node server.js
+// Remember start by saying : nodemon server.js

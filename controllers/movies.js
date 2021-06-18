@@ -14,7 +14,7 @@ moviesRouter.post('/', (req, res) => {
         .then((data) => {
             res.json({data})
         })
-});
+})
 
 moviesRouter.get('/:dataId', (req, res) => {
     moviesApi.grabSingleData(req.params.dataId)
