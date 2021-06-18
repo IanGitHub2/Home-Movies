@@ -7,6 +7,6 @@ async function start() {
     useFindAndModify: false,
     useCreateIndex: true
   });
-}
+}start();
 
 module.exports = mongoose;
