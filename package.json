@@ -15,8 +15,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"nodemon server.js\" \"npm start\"",
-    "postinstall": "npm i && npm run build"
+    "dev": "concurrently \"nodemon server.js\" \"cd client && npm start\"",
+    "postinstall": "cd client && npm i && npm run build"
   },
   "author": "Ian",
   "license": "ISC"
