@@ -14,7 +14,7 @@ const grabAllData = () => {
 };
 
 const grabSingleData = (dataId) => {
-    return MoviesCollection.findById(dataId)
+    return MoviesCollection.findOne({id: dataId})
 };
 
 const addData = (dataId) => {
@@ -22,11 +22,11 @@ const addData = (dataId) => {
 };
 
 const updateData = (dataId, updateData) => {
-    return MoviesCollection.findByIdAndUpdate(dataId, updateData)
+    return MoviesCollection.findOneAndUpdate(dataId, updateData)
 };
 
 const deleteData = (dataId) => {
-    return MoviesCollection.deleteOne({_id: dataId})
+    return MoviesCollection.deleteOne({id: dataId})
 };
 
 module.exports = {
