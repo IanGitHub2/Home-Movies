@@ -1,0 +1,143 @@
+#pagebody {
+    height: auto;
+}
+
+#single-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    "tagLin tagLin tagLin"
+    " sinTitl sinTitl sinTitl  "
+    " sinLen sinImg sinSta "
+    " sinRes sinImg sinMon"
+    " sinOve sinOve sinOve "
+    " . sinGen . ";
+}
+
+#single-tagline {
+    grid-area: tagLin;
+}
+
+.single-tag {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+#single-img {
+    grid-area: sinImg;
+}
+
+#single-title {
+    grid-area: sinTitl;
+    font-size: 1.8em;
+    justify-content: center;
+}
+
+#title-sin {
+    margin-bottom: .5em;
+}
+
+#single-release {
+    grid-area: sinRes;
+    display: flex;
+    align-self: center;
+}
+
+#single-status {
+    grid-area: sinSta;
+    display: flex;
+    align-self: center;
+}
+
+#single-length {
+    grid-area: sinLen;
+    display: flex;
+    align-self: center;
+}
+
+#single-genres {
+    grid-area: sinGen;
+    margin-top: 1.5em;
+}
+
+#single-money {
+    grid-area: sinMon;
+    display: flex;
+    align-self: center;
+}
+
+.sin-budget {
+    display: flex;
+    margin: 0em 1em;
+    justify-content: center;
+}
+
+#sin-budget1 {
+    margin-right: .2em;
+}
+
+.sin-rev {
+    display: flex;
+    margin: 0em 1em;
+    justify-content: center;
+}
+
+#sin-rev1 {
+    margin-right: .2em;
+}
+
+#single-overview {
+    grid-area: sinOve;
+}
+
+.bold-tag {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.bold-tag-it {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.regualer-tag {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.regualer-tag-it {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.thin-tag {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.thin-tag-it {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.line-up {
+    display: flex;
+    justify-content: center;
+}
+
+#img-tag {
+    width: 18em;
+    border-radius: 2px;
+}
