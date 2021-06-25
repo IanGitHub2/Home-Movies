@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from '../react-router-dom';
 import MovieHomePage from './components/homepage/MovieHomePage';
 import SinglePost from './components/single-element/SinglePost';
 import AboutApp from './components/aboutpage/AboutApp';
 import Genres from './components/genres/Genres';
-import SelectedGenres from './components/genres/SelectedGenres'
+import SelectedGenres from './components/genres/SelectedGenres';
 
 function App() {
   return (
