@@ -1,5 +1,5 @@
 {
-  "name": "homemovies",
+  "name": "server",
   "description": "This is a app for looking and searching for movies / tv shows and some information about them.",
   "version": "1.0.0",
   "main": "server.js",
@@ -13,7 +13,7 @@
     "mongoose": "^5.12.14"
   },
   "scripts": {
-    "start": "node .",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"nodemon server.js\" \"cd client && npm start\"",
     "postinstall": "cd client && npm i && npm run build"
