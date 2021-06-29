@@ -3,7 +3,6 @@
   "description": "This is a app for looking and searching for movies / tv shows and some information about them.",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://git.generalassemb.ly/IanGtHbE1/HomeMovies.git"
