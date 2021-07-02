@@ -15,6 +15,19 @@
     " . sinGen . ";
 }
 
+#backdrop-tag {
+    border-radius: 20px;
+    position: relative;
+    width: 38em;
+    height: 7em;
+}
+
+#sin-tag-self {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
 #single-tagline {
     grid-area: tagLin;
 }
@@ -28,6 +41,11 @@
 
 #single-img {
     grid-area: sinImg;
+}
+
+#img-tag {
+    width: 20em;
+    border-radius: 10px;
 }
 
 #single-title {
@@ -44,29 +62,44 @@
     grid-area: sinRes;
     display: flex;
     align-self: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-left: 3%;
 }
 
 #single-status {
     grid-area: sinSta;
     display: flex;
     align-self: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-right: 3%;
 }
 
 #single-length {
     grid-area: sinLen;
     display: flex;
     align-self: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-left: 3%;
 }
 
 #single-genres {
     grid-area: sinGen;
     margin-top: 1.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-right: 3%;
 }
 
 #single-money {
     grid-area: sinMon;
     display: flex;
     align-self: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-right: 3%;
 }
 
 .sin-budget {
@@ -91,6 +124,9 @@
 
 #single-overview {
     grid-area: sinOve;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin: 3% 3% 0 3%;
 }
 
 .bold-tag {
@@ -137,7 +173,181 @@
     justify-content: center;
 }
 
-#img-tag {
-    width: 18em;
-    border-radius: 2px;
+/* for phones */
+
+@media only screen and (max-width: 800px){
+    #pagebody {
+        height: auto;
+    }
+    
+    #single-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        "tagLin tagLin tagLin"
+        " sinTitl sinTitl sinTitl  "
+        " sinLen sinImg sinSta "
+        " sinRes sinImg sinMon"
+        " sinOve sinOve sinOve "
+        " . sinGen . ";
+    }
+    
+    #backdrop-tag {
+        border-radius: 20px;
+        position: relative;
+        width: 8em;
+        height: 3.5em;
+    }
+    
+    #sin-tag-self {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+    }
+    
+    #single-tagline {
+        grid-area: tagLin;
+    }
+    
+    .single-tag {
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+        letter-spacing: 5px;
+    }
+    
+    #single-img {
+        grid-area: sinImg;
+    }
+    
+    #img-tag {
+        width: 8em;
+        border-radius: 10px;
+    }
+    
+    #single-title {
+        grid-area: sinTitl;
+        font-size: 1.8em;
+        justify-content: center;
+    }
+    
+    #title-sin {
+        margin-bottom: .5em;
+    }
+    
+    #single-release {
+        grid-area: sinRes;
+        display: flex;
+        align-self: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        margin-left: 3%;
+    }
+    
+    #single-status {
+        grid-area: sinSta;
+        display: flex;
+        align-self: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        margin-right: 3%;
+    }
+    
+    #single-length {
+        grid-area: sinLen;
+        display: flex;
+        align-self: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        padding: 0 3em 0 3em;
+    }
+    
+    #single-genres {
+        grid-area: sinGen;
+        margin-top: 1.5em;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        margin-right: 3%;
+    }
+    
+    #single-money {
+        grid-area: sinMon;
+        display: flex;
+        align-self: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        margin-right: 3%;
+    }
+    
+    .sin-budget {
+        display: flex;
+        /* margin: 0em .2em; */
+        justify-content: center;
+    }
+    
+    #sin-budget1 {
+        margin-right: .2em;
+    }
+    
+    .sin-rev {
+        display: flex;
+        margin: 0em 1em;
+        justify-content: center;
+    }
+    
+    #sin-rev1 {
+        margin-right: .2em;
+    }
+    
+    #single-overview {
+        grid-area: sinOve;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        margin: 3% 3% 0 3%;
+    }
+    
+    .bold-tag {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: .5em;
+    }
+    
+    .bold-tag-it {
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: .5em;
+    }
+    
+    .regualer-tag {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: .5em;
+    }
+    
+    .regualer-tag-it {
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: .5em;
+    }
+    
+    .thin-tag {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: .5em;
+    }
+    
+    .thin-tag-it {
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: .5em;
+    }
+    
+    .line-up {
+        display: flex;
+        justify-content: center;
+    }
 }

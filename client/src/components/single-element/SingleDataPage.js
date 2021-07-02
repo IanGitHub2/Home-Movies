@@ -10,7 +10,8 @@ export default class SingleDataPage extends React.Component {
                     return(
                         <div id="single-container" key={single.id}>
                             <div id="single-tagline" className="single-tag">
-                                <p className="bold-tag"> "{single.tagline}" </p>
+                                <img src={`https://image.tmdb.org/t/p/w185${single.backdrop_path}`} alt="Movie cover art" id="backdrop-tag"/>
+                                <p id="sin-tag-self" className="bold-tag"> {single.tagline} </p>
                             </div>
 
                             <div id="single-img">
@@ -54,10 +55,10 @@ export default class SingleDataPage extends React.Component {
 
                             <div id="single-money">
                                 <div className="sin-budget">
-                                    <p id="sin-budget1" className="bold-tag">Budget: $</p><p className="regualer-tag">{single.budget}</p>
+                                    <p id="sin-budget1" className="bold-tag">Budget:$</p><p className="regualer-tag">{single.budget}</p>
                                 </div>
                                 <div className="sin-rev">
-                                    <p id="sin-rev1" className="bold-tag">Revenue: $</p><p className="regualer-tag">{single.revenue}</p>
+                                    <p id="sin-rev1" className="bold-tag">Revenue:$</p><p className="regualer-tag">{single.revenue}</p>
                                 </div>
                             </div>
                         </div>
