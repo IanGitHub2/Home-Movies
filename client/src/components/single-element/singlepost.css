@@ -183,22 +183,23 @@
     #single-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(6, auto);
+        grid-template-rows: repeat(7, auto);
         grid-template-areas: 
         "tagLin tagLin tagLin"
         " . sinImg . "
         " . sinImg . "
         " sinTitl sinTitl sinTitl  "
         " sinOve sinOve sinOve "
-        " sinRes sinSta sinLen "
+        " sinRes sinRes sinSta "
         " sinMon sinMon sinMon "
+        " . sinLen . "
         " . sinGen . ";
     }
     
     #backdrop-tag {
-        border-radius: 20px;
+        border-radius: 10px;
         position: relative;
-        width: 8.5em;
+        width: 10.5em;
         height: 3.5em;
         margin-top: 0.2em;
     }
@@ -222,22 +223,22 @@
     
     #single-img {
         grid-area: sinImg;
-        margin-top: 0.1em;
+        margin-top: 0.8em;
     }
     
     #img-tag {
-        width: 8em;
+        width: 12em;
         border-radius: 10px;
     }
     
     #single-title {
         grid-area: sinTitl;
-        font-size: 1.8em;
+        font-size: 4.8em;
         justify-content: center;
     }
     
     #title-sin {
-        margin: 0.8em 0 0.8em 0;
+        margin: 0.2em 0 0.2em 0;
     }
     
     #single-release {
@@ -245,8 +246,9 @@
         display: flex;
         align-self: center;
         background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 20px;
-        margin-left: 3%;
+        border-radius: 10px;
+        margin:0 2%;
+        font-size: 1.5em;
     }
     
     #single-status {
@@ -254,8 +256,10 @@
         display: flex;
         align-self: center;
         background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 20px;
-        margin: 4% 0 4% 3%;
+        border-radius: 10px;
+        font-size: 1.2em;
+        margin-right: 8%;
+        padding: 0.24em 0;
     }
     
     #single-length {
@@ -263,25 +267,25 @@
         display: flex;
         align-self: center;
         background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 20px;
-        margin-right: 3%;
+        border-radius: 10px;
+        font-size: 1.5em;
     }
     
     #single-genres {
         grid-area: sinGen;
-        margin-top: 1.5em;
         background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 20px;
-        margin-right: 3%;
+        border-radius: 10px;
+        font-size: 1.5em;
     }
     
     #single-money {
         grid-area: sinMon;
         display: flex;
-        align-self: center;
+        justify-content: center;
         background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 20px;
-        margin-right: 3%;
+        border-radius: 10px;
+        margin: 2% 3%;
+        font-size: 1.5em;
     }
     
     .sin-budget {
@@ -306,8 +310,10 @@
     #single-overview {
         grid-area: sinOve;
         background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 20px;
-        margin: 2% 2% 0 2%;
+        border-radius: 10px;
+        margin: 2% 2% 2% 2%;
+        font-size: 1.8em;
+        letter-spacing: .5px;
     }
     
     .bold-tag {
