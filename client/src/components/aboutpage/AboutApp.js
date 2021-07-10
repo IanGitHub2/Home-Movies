@@ -30,24 +30,24 @@ export default class AboutApp extends React.Component {
                         </a>
 
                         <div id="block1">
-                            <div id="block01" className="regualer-tag-a">Block1, Email</div>
+                            <div id="block01" className="regualer-tag-a">Email: ikbusinessacct@gmail.com</div>
                         </div>
 
-                        <div id="block2">
-                            <div id="block02" className="regualer-tag-a">Block 2, My Website</div>
-                        </div>
+                        <a id="block2" href='https://sleepy-gates-2985f9.netlify.app' target="_blank" rel="noopener noreferrer">
+                            <div id="block02" className="regualer-tag-a">Portfolio</div>
+                        </a>
 
                         <div id="block3">
-                            <div id="block03" className="regualer-tag-a">Block 3, Resume</div>
+                            <div id="block03" className="regualer-tag-a">B3, Resume</div>
                         </div>
 
-                        <div id="block4">
-                            <div id="block04" className="regualer-tag-a">Block 4, LinkedIn</div>
-                        </div>
+                        <a id="block4" href='https://www.linkedin.com/in/iankincaid/' target="_blank" rel="noopener noreferrer">
+                            <div id="block04" className="regualer-tag-a">LinkedIn</div>
+                        </a>
 
-                        <div id="block5">
-                            <div id="block05" className="regualer-tag-a">Block 5, Github</div>
-                        </div>
+                        <a id="block5" href='https://github.com/IanGitHub2' target="_blank" rel="noopener noreferrer">
+                            <div id="block05" className="regualer-tag-a">Github: IanGitHub2</div>
+                        </a>
 
                     </div>
 
