@@ -25,8 +25,8 @@ moviesRouter.get('/:dataId', (req, res) => {
 
 moviesRouter.put('/:dataId', (req, res) => {
     moviesApi.updateData(req.params.dataId, req.body)
-        .then(() => {
-            res.json({})
+        .then((data) => {
+            res.json({data})
         })
 });
 
