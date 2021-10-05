@@ -1,0 +1,1 @@
+// export const themoviedb = (process.env.REACT_APP_KEY);
