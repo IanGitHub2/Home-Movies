@@ -1,0 +1,56 @@
+/* #trending-container {
+
+} */
+
+.movie-t-s-container{
+    display: flex;
+    overflow-x: scroll;
+    width: 50vw;
+    height: auto;
+}
+
+.t-each-movie{
+    margin: 0 .5rem;
+    background: linear-gradient(180deg, rgba(132, 179, 233, 0.671) 0%, rgba(255,255,255,1) 100%);
+    border-radius: 1rem;
+}
+
+#trending-box {
+    height: 17.1rem;
+    overflow-y: scroll;
+    margin: 1rem;
+}
+
+#trending-img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+#overlay-trending-text {
+    background-color: rgba(0, 0, 0, 0.742);
+    border-radius: 1rem;
+    color: #fff;
+    overflow: scroll;
+}
+
+#trending-title {
+    margin-bottom: .5em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+#trending-des {
+    margin: .3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 800px){
+    .movie-t-s-container{
+        width: 100vw;
+    }
+}

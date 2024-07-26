@@ -1,0 +1,116 @@
+.single-trailer-container{
+    display: grid;
+    grid-template-areas:
+    'prev con next'
+    '. text .';
+}
+
+.s-t-pervious{
+    grid-area: prev;
+    height: 10rem;
+    align-self: center;
+    background-color: rgba(135, 192, 241, 0.764);
+    border: .1rem solid rgba(108, 182, 247, 0.892);
+    border-radius: .5rem;
+    font-size: 3rem;
+    margin: 0 .2rem;
+    padding: 0 .5rem;
+}
+
+.s-t-pervious-hide{
+    display: none;
+}
+
+.s-t-pervious:hover{
+    background-color: rgba(240, 248, 255, 0.221);
+}
+
+.s-t-container{
+    grid-area: con;
+}
+
+.single-trailer{
+    height: 18rem;
+    width: 45rem;
+    border-radius: 1rem;
+    border: .2rem solid rgba(108, 182, 247, 0.892);
+}
+
+.s-t-t-container{
+    grid-area: text;
+    min-width: 25rem;
+    padding: .5rem 2rem;
+    justify-self: center;
+    background-color: rgba(135, 192, 241, 0.764);
+    border-radius: 1rem;
+}
+
+.single-trailer-numbers{
+    font-size: 1.2rem;
+}
+
+.single-trailer-name{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.s-t-next{
+    grid-area: next;
+    height: 10rem;
+    align-self: center;
+    background-color: rgba(135, 192, 241, 0.764);
+    border: .1rem solid rgba(108, 182, 247, 0.892);
+    border-radius: .5rem;
+    font-size: 3rem;
+    margin: 0 .2rem;
+    padding: 0 .5rem;
+}
+
+.s-t-next-hide{
+    display: none;
+}
+
+.s-t-next:hover{
+    background-color: rgba(240, 248, 255, 0.221);
+}
+
+@media only screen and (max-width: 800px){
+    .single-trailer-container{
+        grid-template-areas:
+        'con con'
+        'text text'
+        'prev next';
+    }
+
+    .s-t-pervious{
+        height: 5rem;
+        margin: 1rem .5rem;
+    }
+
+    .s-t-pervious:hover{
+        background-color: rgba(135, 192, 241, 0.764);
+    }
+
+    .single-trailer{
+        height: 30rem;
+        width: 55rem;
+    }
+
+    .single-trailer-numbers{
+        font-size: 1.8rem;
+    }
+
+    .single-trailer-name{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .s-t-next{
+        height: 5rem;
+        margin: 1rem .5rem;
+    }
+
+    .s-t-next:hover{
+        background-color: rgba(135, 192, 241, 0.764);
+    }
+}

@@ -1,113 +1,124 @@
 #about-app-body {
-    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    'topnav'
+    'info'
+    'botnav';
 }
 
+.about-t-nav{
+    grid-area: topnav;
+}
+
+.about-app-info{
+    grid-area: info;
+}
+
+.about-b-nav{
+    grid-area: botnav;
+    align-self: baseline;
+}
 
 #about-app-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    row-gap: 2em;
+    row-gap: 5.2rem;
     grid-template-areas: 
-    "head head tagLin tagLin tagLin"
-    ". movDB movDB movDB ."
-    ". . butLin . ."
-    "blo1 blo2 blo3 blo4 blo5";
+    "head head head"
+    "tagLin tagLin tagLin"
+    "movDB movDB movDB"
+    "butLin butLin butLin"
+    "blo2 blo4 blo5";
 }
 
-#header {
+#about-header {
     grid-area: head;
-    font-size: 2em;
-    margin: 1em 0em;
+    margin: 1rem 0rem;
     justify-content: center;
+}
+
+.about-header-text{
+    font-size: 4rem;
+    font-weight: 600;
 }
 
 #tag-line {
     grid-area: tagLin;
-    font-size: 1.2em;
-    margin: 1em 0em;
-    justify-content: left;
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.tag-line-text{
+    align-self: center;
+    font-size: 2rem;
+    text-align: justify;
 }
 
 #movieDB {
     grid-area: movDB;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.moviedb-img{
+    width: 70rem;
 }
 
 #button-link {
     grid-area: butLin;
-    font-size: 1.2em;
-    padding: 1em 1em;
-    margin: 1em 0em;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: fit-content;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
     background-color: rgba(255, 255, 240, 0.5);
-    border-radius: 15px;
+    border-radius: 1rem;
+}
+
+.button-link-text{
+    font-size: 2rem;
 }
 
 #button-link:hover {
-    grid-area: butLin;
-    font-size: 1.2em;
-    padding: 1em 1em;
-    margin: 1em 0em;
     background-color: rgba(196, 196, 196, 0.5);
-    border-radius: 15px;
-}
-
-#block1 {
-    grid-area: blo1;
 }
 
 #block2 {
     grid-area: blo2;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 240, 0.5);
+    border-radius: 1rem;
 }
 
-#block3 {
-    grid-area: blo3;
+#block2:hover {
+    background-color: rgba(196, 196, 196, 0.5);
 }
 
 #block4 {
     grid-area: blo4;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 240, 0.5);
+    border-radius: 1rem;
+}
+
+#block4:hover {
+    background-color: rgba(196, 196, 196, 0.5);
 }
 
 #block5 {
     grid-area: blo5;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 240, 0.5);
+    border-radius: 1rem;
 }
 
-.bold-tag-a {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 1.4em;
-}
-
-.bold-tag-it-a {
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 1.4em;
-}
-
-.regualer-tag-a {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 1.4em;
-}
-
-.regualer-tag-it-a {
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.4em;
-}
-
-.thin-tag-a {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 1.4em;
-}
-
-.thin-tag-it-a {
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 1.4em;
+#block5:hover {
+    background-color: rgba(196, 196, 196, 0.5);
 }
 
 @media only screen and (max-width: 800px){
@@ -118,67 +129,33 @@
     
     #about-app-container {
         display: grid;
-        row-gap: 0em;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(7, .8fr);
+        row-gap: 4rem;
         grid-template-areas: 
-        " head head head head head head "
-        " tagLin  tagLin tagLin tagLin tagLin tagLin "
-        " . movDB movDB movDB movDB . "
-        " . butLin butLin butLin butLin . "
-        " blo1 blo1 blo1 blo2 blo2 blo2 "
-        " blo3 blo3 blo3 blo4 blo4 blo4 "
-        " . . blo5 blo5 . . ";
-    }
-    
-    #header {
-        grid-area: head;
-        font-size: 2em;
-        margin: auto;
-        justify-content: center;
-    }
-    
-    #tag-line {
-        grid-area: tagLin;
-        font-size: 1.6em;
-    }
-    
-    #movieDB {
-        display: flex;
-        justify-content: center;
-        grid-area: movDB;
-    }
-    
-    #button-link {
-        grid-area: butLin;
-        font-size: 1.4em;
-        margin: auto;
-        background-color: rgba(255, 255, 240, 0.5);
-        border-radius: 15px;
-    }
-    
-    #block1 {
-        grid-area: blo1;
-        font-size: .9em;
-        padding: .8em .8em;
-        margin: auto;
-        background-color: rgba(255, 255, 240, 0.5);
-        border-radius: 15px;
+        "head"
+        "tagLin"
+        "movDB"
+        "butLin"
+        "blo2"
+        "blo4"
+        "blo5";
     }
 
-    #block01 {
-        display: flex;
-        justify-content: center;
-        align-self: center;
+    .about-header-text{
+        font-size: 3rem;
     }
-    
+
+    .tag-line-text{
+        font-size: 1.5rem;
+    }
+
+    .moviedb-img{
+        width: 24rem;
+    }
+
     #block2 {
-        grid-area: blo2;
-        font-size: 1.4em;
-        padding: 1em 1em;
+        font-size: 1.6rem;
+        padding: 1rem 3rem;
         margin: auto;
-        background-color: rgba(255, 255, 240, 0.5);
-        border-radius: 15px;
     }
 
     #block02 {
@@ -186,29 +163,11 @@
         justify-content: center;
         align-items: center;
     }
-    
-    #block3 {
-        grid-area: blo3;
-        font-size: 1.4em;
-        padding: 1em 1em;
-        margin: auto;
-        background-color: rgba(255, 255, 240, 0.5);
-        border-radius: 15px;
-    }
 
-    #block03 {
-        display: flex;
-        justify-content: center;
-        align-self: center;
-    }
-    
     #block4 {
-        grid-area: blo4;
-        font-size: 1.4em;
-        padding: 1em 1em;
+        font-size: 1.6rem;
+        padding: 1rem 3rem;
         margin: auto;
-        background-color: rgba(255, 255, 240, 0.5);
-        border-radius: 15px;
     }
 
     #block04 {
@@ -218,56 +177,14 @@
     }
     
     #block5 {
-        grid-area: blo5;
-        font-size: 1.3em;
-        padding: 1em 1em;
-        margin: auto;
-        background-color: rgba(255, 255, 240, 0.5);
-        border-radius: 15px;
+        font-size: 1.6rem;
+        padding: 1rem 3rem;
+        margin: 0 3rem 2.2rem 3rem;
     }
 
     #block05 {
         display: flex;
         justify-content: center;
         align-self: center;
-    }
-    
-    .bold-tag-a {
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        font-size: 1em;
-    }
-    
-    .bold-tag-it-a {
-        font-family: 'Lato', sans-serif;
-        font-style: italic;
-        font-weight: 700;
-        font-size: 1em;
-    }
-    
-    .regualer-tag-a {
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: 1em;
-    }
-    
-    .regualer-tag-it-a {
-        font-family: 'Lato', sans-serif;
-        font-style: italic;
-        font-weight: 400;
-        font-size: 1em;
-    }
-    
-    .thin-tag-a {
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        font-size: 1em;
-    }
-    
-    .thin-tag-it-a {
-        font-family: 'Lato', sans-serif;
-        font-style: italic;
-        font-weight: 300;
-        font-size: 1em;
     }
 }

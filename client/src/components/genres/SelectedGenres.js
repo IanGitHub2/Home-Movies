@@ -15,13 +15,13 @@ export default class SelectedGenres extends React.Component {
         this.state = {
             selectedGenres: []
         };
-      }
+    }
 
-      componentDidMount() {
+    componentDidMount() {
         axios(api_config_url + this.props.match.params.id + api_config_url2)
         .then(({ data }) => {
             this.setState({ selectedGenres: [data] })
-            console.log(data)
+            // console.log(data)
         }).catch(error => {
             console.log(error)
         })

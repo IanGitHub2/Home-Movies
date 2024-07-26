@@ -1,0 +1,29 @@
+.hometrailer-container{
+    border-radius: 1rem;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(132, 179, 233, 0.671) 0%, rgba(255,255,255,1) 100%);
+}
+
+.hometrailer-section{
+    padding: .5rem 1rem;
+}
+
+.hometrailer {
+    width: 36rem;
+    height: 18rem;
+    border-radius: 1rem;
+}
+
+.t-t-name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+@media only screen and (max-width: 800px){
+    .hometrailer {
+        width: 18rem;
+        height: 15em;
+        /* margin-top: 1em; */
+    }
+}

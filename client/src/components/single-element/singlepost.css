@@ -1,362 +1,406 @@
+#single-post-body{
+    height: fit-content;
+    width: fit-content;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(132,179,233,1) 100%);
+}
+
 #pagebody {
     height: auto;
 }
 
 #single-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: 
-    "tagLin tagLin tagLin"
-    " sinTitl sinTitl sinTitl  "
-    " sinLen sinImg sinSta "
-    " sinRes sinImg sinMon"
-    " sinOve sinOve sinOve "
-    " . sinGen . ";
+    grid-template-areas:
+    'sinTitl sinTitl sinTitl'
+    'sinTrailer sinTrailer sinVoteAve'
+    'tagLin tagLin tagLin'
+    'sinSta sinRes sinImg'
+    'sinGen sinProdCom sinImg'
+    'sinLen sinMon sinImg'
+    'sinOve sinOve sinOve'
+    ' . sinProdCoun . ';
+}
+
+.single-trailer-container{
+    grid-area: sinTrailer;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 #backdrop-tag {
-    border-radius: 20px;
-    position: relative;
-    width: 38em;
-    height: 7em;
-}
-
-#sin-tag-self {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 8em;
 }
 
 #single-tagline {
     grid-area: tagLin;
-}
-
-.single-tag {
     display: flex;
     justify-content: center;
+}
+
+#sin-tag-inv {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: .5rem 2rem;
+    background-color: rgba(135, 192, 241, 0.764);
+    border-radius: 10px;
     font-size: 2em;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+#sin-tag-inv-hide{
+    display: none;
 }
 
 #single-img {
     grid-area: sinImg;
+    align-content: center;
 }
 
 #img-tag {
     width: 20em;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 #single-title {
     grid-area: sinTitl;
-    font-size: 1.8em;
+    display: flex;
     justify-content: center;
+    margin: 2rem 1rem 1rem 1rem;
 }
 
 #title-sin {
-    margin-bottom: .5em;
+    width: fit-content;
+    padding: 1rem 6rem;
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: rgba(135, 192, 241, 0.764);
+    border-radius: 1rem;
+}
+
+.single-vot{
+    grid-area: sinVoteAve;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(135, 192, 241, 0.764);
+    border-radius: 1rem;
+    margin: .5rem .5rem;
+    padding: 1rem .8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 #single-release {
     grid-area: sinRes;
     display: flex;
+    min-height: 5rem;
+    padding: 0 1rem;
+    justify-content: center;
     align-self: center;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    margin-left: 3%;
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+    font-size: 1.6rem;
+}
+
+.single-release-title{
+    align-content: center;
+    margin: 0 .5rem;
+    font-weight: 600;
+}
+
+.single-release-date{
+    align-content: center;
 }
 
 #single-status {
     grid-area: sinSta;
     display: flex;
+    min-height: 5rem;
+    padding: 0 1rem;
+    justify-content: center;
     align-self: center;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    margin-right: 3%;
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+    font-size: 1.6rem;
+}
+
+.single-status-title{
+    align-content: center;
+    margin: 0 .5rem;
+    font-weight: 600;
+}
+
+.single-status-name{
+    align-content: center;
 }
 
 #single-length {
     grid-area: sinLen;
     display: flex;
+    min-height: 5rem;
+    justify-content: center;
     align-self: center;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    margin-left: 3%;
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+    font-size: 1.6rem;
+}
+
+.single-length-title{
+    align-content: center;
+    margin: 0 .5rem;
+    font-weight: 600;
+}
+
+.single-length-time{
+    align-content: center;
 }
 
 #single-genres {
     grid-area: sinGen;
-    margin-top: 1.5em;
+    margin: 1rem 1rem;
+    padding: 1rem;
+    height: min-content;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    margin-right: 3%;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.single-gens{
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: .2rem 1rem;
+}
+
+.single-gens-names{
+    width: min-content;
+    border-bottom: .1rem solid black;
+}
+
+.single-prod-comp{
+    grid-area: sinProdCom;
+    min-height: 5rem;
+    min-width: 30rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+}
+
+.single-prod-comp-inv{
+    display: inline-block;
+    height: min-content;
+    margin: 1rem .5rem;
+    padding: 0 .5rem;
+}
+
+/* .single-prod-comp-img-container{
+    
+} */
+
+.single-prod-comp-img{
+    height: 2.5rem;
+    width: 4rem;
+}
+
+.single-prod-comp-img-hide{
+    display: none;
+}
+
+.single-prod-comp-name{
+    font-size: 1.2rem;
+}
+
+.single-prod-coun{
+    grid-area: sinProdCoun;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: .5rem;
+    margin: 1rem 1rem;
+}
+
+.single-prod-coun-inv{
+    margin: 1rem 1rem;
+}
+
+.single-prod-coun-inv-more{
+    border-right: .1rem solid black;
+}
+
+.single-prod-coun-name{
+    display: flex;
+    margin: .5rem 1rem;
+}
+
+.single-prod-coun-name-more{
+    display: flex;
+    margin: .5rem 1rem;
 }
 
 #single-money {
     grid-area: sinMon;
     display: flex;
+    height: 5rem;
+    padding: 0 .1rem;
+    justify-content: center;
     align-self: center;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    margin-right: 3%;
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+    font-size: 1.35rem;
 }
 
 .sin-budget {
     display: flex;
-    margin: 0em 1em;
+    margin: 0em .1em;
     justify-content: center;
+    align-self: center;
 }
 
-#sin-budget1 {
-    margin-right: .2em;
+#sin-budget-title{
+    margin: 0 .5rem;
+    font-weight: 600;
+}
+
+.sin-budget-data-black{
+    color: black;
+}
+
+.sin-budget-data-red{
+    color: red;
 }
 
 .sin-rev {
     display: flex;
-    margin: 0em 1em;
+    margin: 0 1em;
     justify-content: center;
+    align-self: center;
 }
 
-#sin-rev1 {
-    margin-right: .2em;
+#sin-rev-title{
+    margin: 0 .5rem;
+    font-weight: 600;
+}
+
+.sin-rev-data-black{
+    color: black;
+}
+
+.sin-rev-data-red{
+    color: red;
+}
+
+.sin-rev-data-green{
+    color: green;
 }
 
 #single-overview {
     grid-area: sinOve;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
+    border-radius: 1rem;
     margin: 3% 3% 0 3%;
 }
 
-.bold-tag {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 1.4em;
+.single-overview-t-text{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
-.bold-tag-it {
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 1.4em;
-}
-
-.regualer-tag {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 1.4em;
-}
-
-.regualer-tag-it {
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.4em;
-}
-
-.thin-tag {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 1.4em;
-}
-
-.thin-tag-it {
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 1.4em;
-}
-
-.line-up {
-    display: flex;
-    justify-content: center;
+.single-overview-text{
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
 }
 
 /* for phones */
 
 @media only screen and (max-width: 800px){
-    #pagebody {
-        height: auto;
-    }
-    
     #single-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(7, auto);
-        grid-template-areas: 
-        "tagLin tagLin tagLin"
-        " . sinImg . "
-        " . sinImg . "
-        " sinTitl sinTitl sinTitl  "
-        " sinOve sinOve sinOve "
-        " sinRes sinRes sinSta "
-        " sinMon sinMon sinMon "
-        " . sinLen . "
-        " . sinGen . ";
+        grid-template-areas:
+        'sinTitl sinTitl'
+        'sinTrailer sinTrailer'
+        'tagLin tagLin'
+        'sinOve sinOve'
+        'sinImg sinVoteAve'
+        'sinImg sinRes'
+        'sinSta sinLen'
+        'sinMon sinMon'
+        'sinGen sinProdCom'
+        'sinProdCoun sinProdCoun';
     }
-    
-    #backdrop-tag {
-        border-radius: 10px;
-        position: relative;
-        width: 10.5em;
-        height: 3.5em;
-        margin-top: 0.2em;
-    }
-    
-    #sin-tag-self {
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-    }
-    
-    #single-tagline {
-        grid-area: tagLin;
-    }
-    
-    .single-tag {
-        display: flex;
-        justify-content: center;
-        font-size: 2em;
-        letter-spacing: 2px;
-    }
-    
-    #single-img {
-        grid-area: sinImg;
-        margin-top: 0.8em;
-    }
-    
-    #img-tag {
-        width: 12em;
-        border-radius: 10px;
-    }
-    
-    #single-title {
-        grid-area: sinTitl;
-        font-size: 4.8em;
-        justify-content: center;
-    }
-    
+
     #title-sin {
-        margin: 0.2em 0 0.2em 0;
+        padding: 1rem 3rem;
+        font-size: 4em;
+        letter-spacing: 0;
     }
-    
-    #single-release {
-        grid-area: sinRes;
-        display: flex;
-        align-self: center;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-        margin:0 2%;
-        font-size: 1.5em;
+
+    #sin-tag-inv {
+        margin: 1rem 1rem .5rem 1rem;
+        padding: .5rem .5rem;
+        font-size: 3em;
+        letter-spacing: 0;
     }
-    
-    #single-status {
-        grid-area: sinSta;
-        display: flex;
-        align-self: center;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-        font-size: 1.2em;
-        margin-right: 8%;
-        padding: 0.24em 0;
-    }
-    
-    #single-length {
-        grid-area: sinLen;
-        display: flex;
-        align-self: center;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-        font-size: 1.5em;
-    }
-    
-    #single-genres {
-        grid-area: sinGen;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-        font-size: 1.5em;
-    }
-    
-    #single-money {
-        grid-area: sinMon;
-        display: flex;
-        justify-content: center;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-        margin: 2% 3%;
-        font-size: 1.5em;
-    }
-    
-    .sin-budget {
-        display: flex;
-        justify-content: center;
-    }
-    
-    #sin-budget1 {
-        margin-right: .2em;
-    }
-    
-    .sin-rev {
-        display: flex;
-        margin: 0em 1em;
-        justify-content: center;
-    }
-    
-    #sin-rev1 {
-        margin-right: .2em;
-    }
-    
+
     #single-overview {
-        grid-area: sinOve;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-        margin: 2% 2% 2% 2%;
-        font-size: 1.8em;
-        letter-spacing: .5px;
+        margin: 1rem;
     }
-    
-    .bold-tag {
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        font-size: .5em;
+
+    .single-overview-t-text{
+        font-size: 3rem;
     }
-    
-    .bold-tag-it {
-        font-family: 'Lato', sans-serif;
-        font-style: italic;
-        font-weight: 700;
-        font-size: .5em;
+
+    .single-overview-text{
+        padding: 1rem 1.5rem;
+        font-size: 2rem;
     }
-    
-    .regualer-tag {
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: .5em;
+
+    #single-img {
+        margin: 1rem 2rem;
     }
-    
-    .regualer-tag-it {
-        font-family: 'Lato', sans-serif;
-        font-style: italic;
-        font-weight: 400;
-        font-size: .5em;
+
+    .single-vot{
+        font-size: 2rem;
     }
-    
-    .thin-tag {
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        font-size: .5em;
+
+    #single-release {
+        font-size: 2rem;
     }
-    
-    .thin-tag-it {
-        font-family: 'Lato', sans-serif;
-        font-style: italic;
-        font-weight: 300;
-        font-size: .5em;
+
+    #single-status {
+        font-size: 1.85rem;
     }
-    
-    .line-up {
-        display: flex;
-        justify-content: center;
+
+    #single-length {
+        font-size: 2rem;
+    }
+
+    #single-money {
+        font-size: 2rem;
+    }
+
+    #single-genres {
+        font-size: 2rem;
+    }
+
+    .single-prod-comp-img{
+        height: 3.5rem;
+        width: 8rem;
+    }
+
+    .single-prod-comp-name{
+        font-size: 1.8rem;
+    }
+
+    .single-prod-coun{
+        font-size: 1.5rem;
     }
 }

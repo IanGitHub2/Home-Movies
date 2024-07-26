@@ -1,66 +1,80 @@
-/* Body of page css */
-
-
-/* Nav bar */
-
-
-/* New Movie Trailer */
-
-.hometrailer {
-    width: 50em;
-    height: 25em;
-    margin-top: .5em;
-    padding: 0px 0px;
-}
-
-.movie-scroll-section {
+.homepage{
     display: grid;
-    margin: 1em 0;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
     grid-template-areas: 
-    " newMov trend ";
+    't-nav t-nav t-nav'
+    'h-n-t . h-t-m'
+    'h-n-m h-n-m h-n-m'
+    'b-nav b-nav b-nav';
 }
 
-/*Styling for middle setction movies home page*/
-
-.movie-middle-section-container {
-    overflow-y: scroll;
-    height: 30em;
+.t-nav{
+    grid-area: t-nav;
 }
 
-.each_movie {
-    margin-top: 1em;
-    margin-bottom: 3em;
+.h-new-trailer-s{
+    grid-area: h-n-t;
+    padding: 0 2rem;
+}
+
+.h-new-trailer-t{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* .h-new-trailer{
+    
+} */
+
+.h-new-movie-s{
+    grid-area: h-n-m;
+    margin: 1rem 0;
+}
+
+.h-new-movie-t{
+    margin-bottom: .5rem;
+    font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* .h-new-movie{
+    
+} */
+
+.h-trending-movie-s{
+    grid-area: h-t-m;
+}
+
+.h-trending-movie-t{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* .h-trending-movie{
+
+} */
+
+.b-nav{
+    grid-area: b-nav;
+    align-self: baseline;
 }
 
 @media only screen and (max-width: 800px){
-    /* New Movie Trailer */
+    .homepage{
+        display: grid;
+        grid-template-areas: 
+        't-nav'
+        'h-n-t'
+        'h-t-m'
+        'h-n-m'
+        'b-nav';
+    }
 
-.hometrailer {
-    width: 24em;
-    height: 14em;
-    margin-top: .2em; 
-}
-
-.movie-scroll-section {
-    display: grid;
-    margin: .5em 0;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "newMov . trend";
-}
-
-/*Styling for middle setction movies home page*/
-
-.movie-middle-section-container {
-    overflow-y: scroll;
-    height: 30em;
-}
-
-.each_movie {
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
+    .h-new-trailer-s{
+        margin: 0 2rem;
+        padding: 0 0;
+    }
 }

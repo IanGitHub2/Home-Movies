@@ -14,25 +14,27 @@ export default class SinglePost extends React.Component {
         super(props);
     
         this.state = {
-            singlePostElement: []
+            singlePostElement: [],
+            singlePostElementTrailer: []
         };
-      }
+    }
 
     componentDidMount() {
         axios(api_config_url + this.props.match.params.id + api_config_url2)
         .then(({ data }) => {
             this.setState({ singlePostElement: [data] })
+            this.setState({singlePostElementTrailer: [data.id]})
             //console.log(data)
         }).catch(error => {
             console.log(error)
         })
     }
 
-    render() {console.log(this.state.singlePostElement)
+    render() {
         return(
-            <div>
+            <div id='single-post-body'>
                 <TopNavBar/>
-                <SingleDataPage singlePostElement={this.state.singlePostElement}/>
+                <SingleDataPage singlePostElement={this.state.singlePostElement} singlePostElementTrailer={this.state.singlePostElementTrailer}/>
                 <BottomNavBar/>
             </div>
         )

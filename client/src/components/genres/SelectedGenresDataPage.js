@@ -7,7 +7,7 @@ export default class SelectedGenresDataPage extends React.Component {
                 <div>Hi still working on this.</div>
                 {this.props.selectedGenres.map((genres, i ) => {
                     return(
-                        <div>
+                        <div key={i}>
                             <div key={genres.id}>
                                 <div>{genres.total_results}</div>
                                 <div>{genres.results[9].title}</div>

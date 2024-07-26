@@ -1,70 +1,152 @@
-import React from 'react';
-import './singlepost.css'
+import React from "react";
+import SingleTrailers from "./single-element-trailers/SingleTrailers";
+import "./singlepost.css";
 
-export default class SingleDataPage extends React.Component {
-    render() {
-        //if (!this.props.singlePostElement) return 1;
-        return(
-            <div id='pagebody'>
-                {this.props.singlePostElement.map((single, i ) => {
-                    return(
-                        <div id="single-container" key={single.id}>
-                            <div id="single-tagline" className="single-tag">
-                                <img src={`https://image.tmdb.org/t/p/w185${single.backdrop_path}`} alt="Movie cover art" id="backdrop-tag"/>
-                                <p id="sin-tag-self" className="bold-tag"> {single.tagline} </p>
-                            </div>
+const SingleDataPage = ({ singlePostElement, singlePostElementTrailer }) => {
 
-                            <div id="single-img">
-                                <img src={`https://image.tmdb.org/t/p/w185${single.poster_path}`} alt="Movie cover art" id="img-tag"/>
-                            </div>
+    let getmovieruntime = singlePostElement.map((sin, i) => { return (sin.runtime)});
 
-                            <div id="single-overview">
-                                <p className="regualer-tag">Overview: {single.overview}</p>
-                            </div>
+    let calchours = getmovieruntime / 60;
+    let TotalRunTimeHours = Math.abs(calchours.toString().slice(0, 1))
+    let lookfor = '.'
+    let getruntimeminutes = Math.abs(calchours.toString().slice(calchours.toString().indexOf(lookfor)))
+    let TotalRunTimeMinutes = Math.round(getruntimeminutes * 60)
 
-                            <div id="single-title">
-                                <div id="title-sin" className="bold-tag">{ single.title }</div>
-                            </div>
-                            
-                            <div id="single-release" className="line-up">
-                                <p className="bold-tag">Release date:</p> 
-                                <p className="regualer-tag">{single.release_date}</p>
-                            </div>
+    let minutefix = null;
+    let fixminlook = null;
 
-                            <div id="single-status" className="line-up">
-                                <p className="bold-tag">Movie Status:</p> 
-                                <p className="regualer-tag">{single.status}</p>
-                            </div>
-
-                            <div id="single-length" className="line-up">
-                                <p className="bold-tag">Length:</p> 
-                                <p className="regualer-tag">{single.runtime}</p>
-                            </div>
-
-                            <div id="single-genres">
-                                <p className="bold-tag">Did you like or dislike the movie ?</p>
-                                <div>
-                                    <button> Like </button>
-                                    <div>0</div>
-                                </div>
-                                <div>
-                                    <button> DisLike </button>
-                                    <div>0</div>
-                                </div>
-                            </div>
-
-                            <div id="single-money">
-                                <div className="sin-budget">
-                                    <p id="sin-budget1" className="bold-tag">Budget:$</p><p className="regualer-tag">{single.budget}</p>
-                                </div>
-                                <div className="sin-rev">
-                                    <p id="sin-rev1" className="bold-tag">Revenue:$</p><p className="regualer-tag">{single.revenue}</p>
-                                </div>
-                            </div>
-                        </div>
-                    )
-                })}
-            </div>
-        )
+    if(TotalRunTimeMinutes <= 9){
+        let zero = '0';
+        minutefix = TotalRunTimeMinutes.toString();
+        fixminlook = zero.concat('', minutefix);
     }
-}
+
+    return (
+        <div id="pagebody">
+        {singlePostElement?.map((single, i) => {
+            return (
+            <div id="single-container" key={single.id}>
+                <div className="single-trailer-container">
+                    <SingleTrailers
+                        singlePostElementTrailer={singlePostElementTrailer}
+                    />
+                </div>
+
+                <div id="single-tagline" >
+                    <p id={!single.tagline ? 'sin-tag-inv-hide' : "sin-tag-inv"} >
+                        {single.tagline}
+                    </p>
+                </div>
+
+                <div id="single-img">
+                    <img
+                        src={`https://image.tmdb.org/t/p/w185${single.poster_path}`}
+                        alt="Movie cover art"
+                        id="img-tag"
+                    />
+                </div>
+
+                <div id="single-overview">
+                    <div className="single-overview-text">
+                        <div className="single-overview-t-text">Description</div>
+                        {single.overview}
+                    </div>
+                </div>
+
+                <div className="single-vot">
+                    <img
+                        src={`https://image.tmdb.org/t/p/w185${single.backdrop_path}`}
+                        alt={`${single.title} Backdrop`}
+                        id="backdrop-tag"
+                    />
+                    <div>{single.vote_average} / 10</div>
+                    <div>{single.vote_count} Votes</div>
+                </div>
+
+                <div id="single-title">
+                    <div id="title-sin">
+                        {single.title}
+                    </div>
+                </div>
+
+                <div id="single-release">
+                    <p className="single-release-title">Release date:</p>
+                    <p className="single-release-date">{single.release_date}</p>
+                </div>
+
+                <div id="single-status">
+                    <p className="single-status-title">Movie Status:</p>
+                    <p className="single-status-name">{single.status}</p>
+                </div>
+
+                <div id="single-length">
+                    <p className="single-length-title">Length:</p>
+                    <p className="single-length-time">{TotalRunTimeHours}:{!fixminlook ? TotalRunTimeMinutes : fixminlook}</p>
+                </div>
+
+                <div className="single-prod-comp">
+                    {single?.production_companies?.map((sin, i) => {
+                    return (
+                        <div key={i} className="single-prod-comp-inv">
+                            <div className="single-prod-comp-img-container">
+                                {!sin.logo_path ?
+                                    <div className="single-prod-comp-img-hide"></div>
+                                    :
+                                    <img
+                                        className="single-prod-comp-img"
+                                        src={`https://image.tmdb.org/t/p/w185${sin.logo_path}`}
+                                        alt={sin.name}
+                                        // id={sin.id}
+                                    />
+                                }
+                            </div>
+                            <div className="single-prod-comp-name">{sin.name}</div>
+                        </div>
+                    );
+                    })}
+                </div>
+
+                <div className="single-prod-coun">
+                    {single?.production_countries?.map((sin, i) => {
+                        return(
+                            <div key={i} className={Object.keys(single.production_countries).length > 1 ? "single-prod-coun-inv-more" : "single-prod-coun-inv"}>
+                                <div className={Object.keys(single.production_countries).length > 1 ? "single-prod-coun-name-more" : "single-prod-coun-name"}>
+                                    {sin.name}
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+
+                <div id="single-genres">
+                    {single?.genres?.map((sin, i) => {
+                        return (
+                            <div key={i} className="single-gens">
+                                <div className='single-gens-names'>{sin.name}</div>
+                            </div>
+                        );
+                    })}
+                </div>
+
+                <div id="single-money">
+                    <div className="sin-budget">
+                        <div id="sin-budget-title">
+                        Budget:
+                        </div>
+                        <div className={single.budget > single.revenue ? 'sin-budget-data-red' : 'sin-budget-data-black'}>${single.budget.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</div>
+                    </div>
+                    <div className="sin-rev">
+                        <div id="sin-rev-title">
+                        Revenue:
+                        </div>
+                        <div className={single.revenue > single.budget ? 'sin-rev-data-green' : single.revenue < single.budget ? 'sin-rev-data-red' :  single.revenue === single.budget ? 'sin-rev-data-black' : 'sin-rev-data-black'}>${single.revenue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</div>
+                    </div>
+                </div>
+            </div>
+            );
+        })}
+        </div>
+    );
+};
+
+export default SingleDataPage;

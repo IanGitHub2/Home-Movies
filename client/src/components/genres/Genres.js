@@ -16,7 +16,7 @@ export default class Genres extends React.Component {
         .then((res) => res.json())
         .then(genres => {
             this.setState({ genre: genres.genres });
-            console.log(genres)
+            // console.log(genres)
         })
     }
 

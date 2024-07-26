@@ -1,0 +1,50 @@
+/* #movie-container {
+    
+} */
+
+.movie-s-container{
+    display: flex;
+    overflow-x: scroll;
+    width: 100vw;
+    height: auto;
+}
+
+.each-movie{
+    margin: 0 .5rem;
+    background: linear-gradient(180deg, rgba(132, 179, 233, 0.671) 0%, rgba(255,255,255,1) 100%);
+    border-radius: 1rem;
+}
+
+#movie-box {
+    height: 17.1rem;
+    overflow-y: scroll;
+    margin: 1rem;
+}
+
+#movie-img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+#overlay-text {
+    background-color: rgba(0, 0, 0, 0.742);
+    border-radius: 1rem;
+    color: #fff;
+    overflow: scroll;
+}
+
+#movie-title {
+    margin-bottom: .5em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+#movie-des {
+    margin: .3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
